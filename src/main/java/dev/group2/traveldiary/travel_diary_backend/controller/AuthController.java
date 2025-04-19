@@ -1,8 +1,11 @@
 package dev.group2.traveldiary.travel_diary_backend.controller;
 
+import dev.group2.traveldiary.travel_diary_backend.dto.AuthorizedUserDTO;
 import dev.group2.traveldiary.travel_diary_backend.dto.LoginRequestDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +14,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -43,16 +49,27 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginRequestDTO request) {
+    public ResponseEntity<AuthorizedUserDTO> login(@RequestBody LoginRequestDTO request, HttpServletRequest httpRequest) {
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
-                            request.getUsername(), request.getPassword())
+                            request.getUsername(),
+                            request.getPassword()
+                    )
             );
+
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            return ResponseEntity.ok("Login successful");
+            HttpSession session = httpRequest.getSession(true);
+            session.setAttribute(HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY,
+                    SecurityContextHolder.getContext());
+            Optional<User> userOptional = userRepository.findByUsername(request.getUsername());
+            if(userOptional.isPresent()) {
+                User user = userOptional.get();
+                return ResponseEntity.status(HttpStatus.OK).body(new AuthorizedUserDTO(user));
+            }
         } catch (AuthenticationException e) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthorizedUserDTO());
         }
+        return null;
     }
 }
