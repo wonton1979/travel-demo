@@ -1,0 +1,135 @@
+[
+  {
+    "activity": {
+      "activityId": 1
+    },
+    "text": "The temple was busy but peaceful."
+  },
+  {
+    "activity": {
+      "activityId": 2
+    },
+    "text": "Best sushi I've ever had!" },
+  {
+    "activity": {
+      "activityId": 5
+    },
+    "text": "Dancing with locals was amazing!"
+  },
+  {
+    "activity": {
+      "activityId": 6
+    },
+    "text": "Views worth every minute." },
+  {
+    "activity": {
+      "activityId": 7
+    },
+    "text": "Hike was intense but rewarding." },
+  {
+    "activity": {
+      "activityId": 8
+    },
+    "text": "Cold water but beautiful views." },
+  {
+    "activity": {
+      "activityId": 11
+    },
+    "text": "Romantic spot for sunset." },
+  {
+    "activity": {
+      "activityId": 12
+    },
+    "text": "Loved the art collection." },
+  {
+    "activity": {
+      "activityId": 15
+    },
+    "text": "Lots of waterfalls!" },
+  {
+    "activity": {
+      "activityId": 16
+    },
+    "text": "So relaxing. A must-do." },
+  {
+    "activity": {
+      "activityId": 18
+    },
+    "text": "Sandy but so worth it." },
+  {
+    "activity": {
+      "activityId": 20
+    },
+    "text": "Great beach day!" },
+  {
+    "activity": {
+      "activityId": 23
+    },
+    "text": "Very muddy, wear boots!" },
+  {
+    "activity": {
+      "activityId": 24
+    },
+    "text": "Saw pink dolphins!" },
+  {
+    "activity": {
+      "activityId": 26
+    },
+    "text": "Super cold but unique." },
+  {
+    "activity": {
+      "activityId": 27
+    },
+    "text": "Scenic stops everywhere." },
+  {
+    "activity": {
+      "activityId": 29
+    },
+    "text": "Felt like royalty!" },
+  {
+    "activity": {
+      "activityId": 30
+    },
+    "text": "New favorite red wine." },
+  {
+    "activity": {
+      "activityId": 34
+    },
+    "text": "So warm and cozy." },
+  {
+    "activity": {
+      "activityId": 36
+    },
+    "text": "Fast and dusty!" },
+  {
+    "activity": {
+      "activityId": 38
+    },
+    "text": "Surprising and creative exhibits."
+  },
+  {
+    "activity": {
+      "activityId": 39
+    },
+    "text": "The forest felt enchanted." },
+  {
+    "activity": {
+      "activityId": 41
+    },
+    "text": "Humidity was crazy high!" },
+  {
+    "activity": {
+      "activityId": 45
+    },
+    "text": "Legs hurt but worth it." },
+  {
+    "activity": {
+      "activityId": 47
+    },
+    "text": "Tallest thing I've seen!" },
+  {
+    "activity": {
+      "activityId": 49
+    },
+    "text": "So many food options." }
+]

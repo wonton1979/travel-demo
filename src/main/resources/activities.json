@@ -1,0 +1,352 @@
+[
+  {
+    "itinerary": {
+      "itineraryId": 1
+    },
+    "title": "Visit Senso-ji",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 1
+    },
+    "title": "Eat sushi in Tsukiji",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 2
+    },
+    "title": "Colosseum tour",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 2
+    },
+    "title": "Gelato by the Trevi Fountain",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 3
+    },
+    "title": "Attend Carnival parade",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 3
+    },
+    "title": "Visit Christ the Redeemer",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 4
+    },
+    "title": "Hike Banff trails",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 4
+    },
+    "title": "See Lake Louise",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 5
+    },
+    "title": "Sydney Opera House tour",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 5
+    },
+    "title": "Relax on Bondi Beach",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 6
+    },
+    "title": "Picnic at Eiffel Tower",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 6
+    },
+    "title": "Louvre Museum visit",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 7
+    },
+    "title": "Visit Grand Palace",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 7
+    },
+    "title": "Street food tasting",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 8
+    },
+    "title": "Blue Lagoon bath",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 8
+    },
+    "title": "Drive Golden Circle",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 9
+    },
+    "title": "Explore souks in Marrakech",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 9
+    },
+    "title": "Ride camels in the desert",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 10
+    },
+    "title": "Walk Golden Gate Bridge",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 10
+    },
+    "title": "Visit Alcatraz Island",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 11
+    },
+    "title": "Ride a gondola in Venice",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 11
+    },
+    "title": "Visit Doge’s Palace",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 12
+    },
+    "title": "Amazon rainforest trek",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 13
+    },
+    "title": "See Northern Lights",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 14
+    },
+    "title": "Great Ocean Road drive",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 15
+    },
+    "title": "Tour Loire Valley castles",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 16
+    },
+    "title": "Snorkel at Phi Phi Islands",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 17
+    },
+    "title": "Glacier hike",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 18
+    },
+    "title": "Camp in the Sahara",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 19
+    },
+    "title": "Broadway show",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 20
+    },
+    "title": "Visit Fushimi Inari Shrine",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 21
+    },
+    "title": "Jungle safari",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 22
+    },
+    "title": "Explore Colosseum",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 23
+    },
+    "title": "Dance in Rio street party",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 24
+    },
+    "title": "CN Tower edgewalk",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 25
+    },
+    "title": "Lavender fields stroll",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 26
+    },
+    "title": "Night market snacks",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 27
+    },
+    "title": "Ice cave exploration",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 28
+    },
+    "title": "Medina walking tour",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 29
+    },
+    "title": "Road trip on Route 66",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 30
+    },
+    "title": "Eat ramen in Dotonbori",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 30
+    },
+    "title": "Visit Osaka Castle",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 1
+    },
+    "title": "Stroll through Ueno Park",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 2
+    },
+    "title": "Pasta making class",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 5
+    },
+    "title": "Harbour Bridge Climb",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 9
+    },
+    "title": "Hammam spa experience",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 11
+    },
+    "title": "Murano glass tour",
+    "completionStatus": false
+  },
+  {
+    "itinerary": {
+      "itineraryId": 12
+    },
+    "title": "Boat ride on Amazon",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 19
+    },
+    "title": "Pizza at Times Square",
+    "completionStatus": true
+  },
+  {
+    "itinerary": {
+      "itineraryId": 30
+    },
+    "title": "Try street food in Osaka",
+    "completionStatus": false
+  }
+]

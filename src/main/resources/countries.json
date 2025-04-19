@@ -1,0 +1,52 @@
+[
+  {
+    "countryName": "Japan",
+    "description": "Land of the Rising Sun",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Italy",
+    "description": "Rich in art and history",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Brazil",
+    "description": "Vibrant culture and festivals",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Canada",
+    "description": "Home to wilderness and mountains",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Australia",
+    "description": "Outback adventures",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "France",
+    "description": "Gourmet food and romance",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Thailand",
+    "description": "Land of Smiles",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Iceland",
+    "description": "Fire and Ice",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "Morocco",
+    "description": "Colorful markets and deserts",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  },
+  {
+    "countryName": "United States of America",
+    "description": "Diverse landscapes and cities",
+    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+  }
+]

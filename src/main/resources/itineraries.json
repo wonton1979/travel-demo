@@ -1,0 +1,332 @@
+[
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 1
+    },
+    "isPrivate": false,
+    "title": "Tokyo Adventure",
+    "modifiedAt": "2025-04-01T12:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 2
+    },
+    "isPrivate": false,
+    "title": "Italian Getaway",
+    "modifiedAt": "2025-03-15T08:30:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 3
+    },
+    "isPrivate": true,
+    "title": "Carnival Fun",
+    "modifiedAt": "2025-01-10T14:45:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 4
+    },
+    "isPrivate": false,
+    "title": "Rockies Trek",
+    "modifiedAt": "2024-12-20T10:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 5
+    },
+    "isPrivate": false,
+    "title": "Sydney Sights",
+    "modifiedAt": "2025-02-05T09:20:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 6
+    },
+    "isPrivate": true,
+    "title": "Paris in Spring",
+    "modifiedAt": "2025-03-01T15:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 7
+    },
+    "isPrivate": false,
+    "title": "Thai Temples Tour",
+    "modifiedAt": "2024-11-10T11:30:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 8
+    },
+    "isPrivate": false,
+    "title": "Iceland Ring Road",
+    "modifiedAt": "2025-01-18T07:50:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 9
+    },
+    "isPrivate": true,
+    "title": "Moroccan Markets",
+    "modifiedAt": "2025-02-27T12:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 10
+    },
+    "isPrivate": false,
+    "title": "California Dreamin'",
+    "modifiedAt": "2025-03-23T16:10:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 2
+    },
+    "isPrivate": false,
+    "title": "Venice Vibes",
+    "modifiedAt": "2025-04-01T13:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 3
+    },
+    "isPrivate": false,
+    "title": "Amazon Explorer",
+    "modifiedAt": "2025-04-02T10:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 4
+    },
+    "isPrivate": true,
+    "title": "Northern Lights",
+    "modifiedAt": "2025-03-12T20:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 5
+    },
+    "isPrivate": false,
+    "title": "Coastal Drive",
+    "modifiedAt": "2025-04-03T09:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 6
+    },
+    "isPrivate": true,
+    "title": "Château Visits",
+    "modifiedAt": "2025-03-30T12:30:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 7
+    },
+    "isPrivate": false,
+    "title": "Island Hopping",
+    "modifiedAt": "2025-02-25T08:45:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 8
+    },
+    "isPrivate": false,
+    "title": "Glacier Roadtrip",
+    "modifiedAt": "2025-03-05T17:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 9
+    },
+    "isPrivate": true,
+    "title": "Sahara Nights",
+    "modifiedAt": "2025-02-14T22:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 10
+    },
+    "isPrivate": false,
+    "title": "New York Vibes",
+    "modifiedAt": "2025-01-28T10:10:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 1
+    },
+    "isPrivate": true,
+    "title": "Kyoto Calm",
+    "modifiedAt": "2025-03-18T11:15:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 5
+    },
+    "isPrivate": false,
+    "title": "Rainforest Escape",
+    "modifiedAt": "2025-01-02T08:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 2
+    },
+    "isPrivate": false,
+    "title": "Roman Ruins",
+    "modifiedAt": "2025-04-04T15:45:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 3
+    },
+    "isPrivate": false,
+    "title": "Rio Revelations",
+    "modifiedAt": "2025-04-05T17:15:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 4
+    },
+    "isPrivate": false,
+    "title": "Toronto Tour",
+    "modifiedAt": "2025-04-06T11:25:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 6
+    },
+    "isPrivate": true,
+    "title": "Provence Peace",
+    "modifiedAt": "2025-03-20T13:40:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 7
+    },
+    "isPrivate": false,
+    "title": "Bangkok Buzz",
+    "modifiedAt": "2025-03-22T18:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 1
+    },
+    "country": {
+      "countryId": 8
+    },
+    "isPrivate": true,
+    "title": "Frozen Fjords",
+    "modifiedAt": "2025-01-30T06:30:00Z"
+  },
+  {
+    "user":{
+      "userId": 2
+    },
+    "country": {
+      "countryId": 9
+    },
+    "isPrivate": false,
+    "title": "Fez & Beyond",
+    "modifiedAt": "2025-02-28T14:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 3
+    },
+    "country": {
+      "countryId": 10
+    },
+    "isPrivate": false,
+    "title": "Route 66",
+    "modifiedAt": "2025-03-25T19:00:00Z"
+  },
+  {
+    "user":{
+      "userId": 4
+    },
+    "country": {
+      "countryId": 1
+    },
+    "isPrivate": true,
+    "title": "Osaka Eats",
+    "modifiedAt": "2025-04-07T12:20:00Z"
+  }
+]

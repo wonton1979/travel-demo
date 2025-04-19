@@ -1,7 +1,9 @@
 package dev.group2.traveldiary.travel_diary_backend.repository;
-import dev.group2.traveldiary.travel_diary_backend.Country;
+import dev.group2.traveldiary.travel_diary_backend.model.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CountryRepository extends JpaRepository<Country, Long> {
+import java.util.Optional;
 
+public interface CountryRepository extends JpaRepository<Country, Long> {
+    Optional<Country> findByCountryName(String Name);
 }

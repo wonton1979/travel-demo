@@ -1,0 +1,42 @@
+[
+  {
+    "username": "wanderer_joe",
+    "firstName": "Joe",
+    "lastName": "Smith",
+    "password": "password123",
+    "email": "joe@example.com",
+    "bio": "World explorer and coffee lover.",
+    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "isPrivate": false
+  },
+  {
+    "username": "globetrotter_amy",
+    "firstName": "Amy",
+    "lastName": "Johnson",
+    "password": "password456",
+    "email": "amy@example.com",
+    "bio": "Adventure is out there!",
+    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "isPrivate": false
+  },
+  {
+    "username": "nomad_mike",
+    "firstName": "Mike",
+    "lastName": "Chen",
+    "password": "password789",
+    "email": "mike@example.com",
+    "bio": "Backpacking one trail at a time.",
+    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "isPrivate": true
+  },
+  {
+    "username": "traveldiaries_lisa",
+    "firstName": "Lisa",
+    "lastName": "Nguyen",
+    "password": "password012",
+    "email": "lisa@example.com",
+    "bio": "Photographer with a passion for cultures.",
+    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "isPrivate": false
+  }
+]

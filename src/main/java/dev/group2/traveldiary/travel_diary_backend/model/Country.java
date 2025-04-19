@@ -1,5 +1,6 @@
-package dev.group2.traveldiary.travel_diary_backend;
+package dev.group2.traveldiary.travel_diary_backend.model;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "countries")
@@ -8,14 +9,22 @@ public class Country {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long countryId;
 
+    @NotBlank
+    @Column(unique = true)
     private String countryName;
+
+    @NotBlank
     private String description;
-    private String photo;
+
+    @NotBlank
+    private String countryPicUrl;
+
     public Country() {}
-    public Country(String countryName, String description, String photo) {
+
+    public Country(String countryName, String description, String countryPicUrl) {
         this.countryName = countryName;
         this.description = description;
-        this.photo = photo;
+        this.countryPicUrl = countryPicUrl;
     }
     public Long getCountryId() {
         return countryId;
@@ -27,8 +36,8 @@ public class Country {
     public String getDescription() {
         return description;
     }
-    public String getPhoto() {
-        return photo;
+    public String getCountryPicUrl() {
+        return countryPicUrl;
     }
 
     public void setCountryName(String countryName) {
@@ -37,7 +46,7 @@ public class Country {
     public void setDescription(String description) {
         this.description = description;
     }
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setCountryPicUrl(String photo) {
+        this.countryPicUrl = photo;
     }
 }
