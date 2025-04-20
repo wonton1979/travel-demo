@@ -32,6 +32,10 @@ public class CustomErrorController implements ErrorController {
         if ( (int) attributes.get("status") == 403) {
             attributes.put("message", "Unauthorized access to operation");
         }
+        if ( (int) attributes.get("status") == 405) {
+            attributes.put("message", "Method Not Allowed,Bad Request");
+        }
+
         Map<String, Object> errorBody = new HashMap<>();
         errorBody.put("status", attributes.get("status"));
         errorBody.put("error", attributes.get("error"));

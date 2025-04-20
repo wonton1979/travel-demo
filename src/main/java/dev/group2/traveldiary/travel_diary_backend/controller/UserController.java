@@ -1,6 +1,9 @@
 package dev.group2.traveldiary.travel_diary_backend.controller;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.service.UserService;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -64,11 +67,16 @@ public class UserController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Map<String, Object>> deleteUser(@AuthenticationPrincipal UserDetails userDetails) {
+    public ResponseEntity<Map<String, Object>> deleteUser(@AuthenticationPrincipal UserDetails userDetails, HttpServletRequest request, HttpServletResponse response) {
         if (userDetails == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation. Please login again."));
         }
         userService.deleteUser(userDetails.getUsername());
+        request.getSession().invalidate();
+        Cookie clearCookies = new Cookie("JSESSIONID", "");
+        clearCookies.setMaxAge(0);
+        clearCookies.setPath("/");
+        response.addCookie(clearCookies);
         return ResponseEntity.status(HttpStatus.OK).body(Map.of("message", "User deleted successfully."));
     }
 }
