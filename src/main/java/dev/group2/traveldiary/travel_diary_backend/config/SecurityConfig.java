@@ -45,6 +45,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST,"/api/notes").authenticated()
                         .requestMatchers(HttpMethod.PATCH,"/api/users").authenticated()
+                        .requestMatchers(HttpMethod.DELETE,"/api/users").authenticated()
                         .anyRequest().permitAll()
                 )
                 .authenticationProvider(authenticationProvider())
