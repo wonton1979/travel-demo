@@ -300,7 +300,7 @@
     ]
   },
 
-  "PATCH /api/activities/:activities": {
+  "PATCH /api/activities/:activityId": {
     "description": "Restricted operation, only available to authorized logged in user can modify their own activity",
     "queries": [],
     "exampleResponse": {
@@ -314,7 +314,7 @@
     }
   },
 
-  "DELETE /api/activities/:activities": {
+  "DELETE /api/activities/:activityId": {
     "description": "Restricted operation, only available to authorized logged in user can delete their own activity",
     "queries": [],
     "exampleResponse": {
@@ -323,5 +323,66 @@
     "unauthorized": {
       "message": "Unauthorized operation."
     }
+  },
+
+  "GET /api/notes/activity/:activityId": {
+    "description": "serves an array of all notes which related to specific activity",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "activityId": 2,
+        "text": "Best sushi I've ever had!",
+        "noteId": 2
+      },
+      {
+        "activityId": 2,
+        "text": "Try fresh uni at Tsukiji Market — pricey but worth it!",
+        "noteId": 27
+      }
+    ]
+  },
+
+  "POST /api/notes": {
+    "description": "Restricted operation, only available to authorized logged in user can post new notes",
+    "queries": [],
+    "exampleResponse": {
+      "authorized":   {
+        "activity": {
+          "activityId": 52
+        },
+        "text": "Book tickets in advance — tours often sell out, especially on weekends."
+      },
+      "unauthorized": {
+        "path": "/api/users",
+        "error": "Forbidden",
+        "message": "Unauthorized access to operation",
+        "status": 403
+      }
+    }
+  },
+
+  "PATCH /api/notes/:noteId": {
+    "description": "Restricted operation, only available to authorized logged in user can modify their own notes",
+    "queries": [],
+    "exampleResponse": {
+      "activityId": 52,
+      "text": "Book tickets in advance — tours often sell out.",
+      "noteId": 28
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
+  },
+
+  "DELETE /api/notes/:noteId": {
+    "description": "Restricted operation, only available to authorized logged in user can delete their own notes",
+    "queries": [],
+    "exampleResponse": {
+      "message": "Note Deleted Successfully"
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
   }
+
 }
