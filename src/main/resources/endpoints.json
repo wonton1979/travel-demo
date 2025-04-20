@@ -254,5 +254,74 @@
     "unauthorized": {
       "message": "Unauthorized operation."
     }
+  },
+
+  "POST /api/activities": {
+    "description": "Restricted operation, only available to authorized logged in user can post new activity",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "activityId": 51,
+        "title": "Explore Hobbiton Movie Set",
+        "itineraryId": 32,
+        "completionStatus": false
+      },
+      "unauthorized": {
+        "path": "/api/users",
+        "error": "Forbidden",
+        "message": "Unauthorized access to operation",
+        "status": 403
+      }
+    }
+  },
+
+  "GET /api/activities/itinerary/:itineraryId": {
+    "description": "serves an array of all activities which related to specific itinerary",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "activityId": 3,
+        "title": "Colosseum tour",
+        "itineraryId": 2,
+        "completionStatus": true
+      },
+      {
+        "activityId": 4,
+        "title": "Gelato by the Trevi Fountain",
+        "itineraryId": 2,
+        "completionStatus": false
+      },
+      {
+        "activityId": 44,
+        "title": "Pasta making class",
+        "itineraryId": 2,
+        "completionStatus": false
+      }
+    ]
+  },
+
+  "PATCH /api/activities/:activities": {
+    "description": "Restricted operation, only available to authorized logged in user can modify their own activity",
+    "queries": [],
+    "exampleResponse": {
+      "activityId": 51,
+      "title": "Explore Hobbiton Movie Set",
+      "itineraryId": 32,
+      "completionStatus": true
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
+  },
+
+  "DELETE /api/activities/:activities": {
+    "description": "Restricted operation, only available to authorized logged in user can delete their own activity",
+    "queries": [],
+    "exampleResponse": {
+      "message": "Activity Deleted Successfully"
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
   }
 }
