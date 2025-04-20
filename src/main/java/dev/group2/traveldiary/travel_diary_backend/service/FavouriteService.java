@@ -10,5 +10,4 @@ public class FavouriteService {
     public FavouriteService(FavouriteRepository favouriteRepository) {
         this.favouriteRepository = favouriteRepository;
     }
-
 }
