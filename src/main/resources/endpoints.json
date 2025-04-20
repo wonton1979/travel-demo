@@ -122,7 +122,137 @@
         "status": 403
       }
     }
+  },
+
+  "PATCH /api/users": {
+    "description": "Restricted operation, only available to authorized logged in user can modify their own details",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "username": "backpacker_ben",
+        "firstName": "Ben",
+        "lastName": "Walker",
+        "email": "ben99@example.com",
+        "isPrivate": false,
+        "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+        "bio": "Chasing trails across the globe.",
+        "userId": 9,
+        "success": true,
+        "message": "Login successful"
+      },
+      "unauthorized": {
+        "path": "/api/users",
+        "error": "Forbidden",
+        "message": "Unauthorized access to operation",
+        "status": 403
+      }
+    }
+  },
+
+  "GET /api/itineraries/country/:countryName": {
+    "description": "serves an array of all itineraries which are related to that specific country",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "userId": 1,
+        "title": "Tokyo Adventure",
+        "itineraryId": 1,
+        "isPrivate": false,
+        "modifiedAt": "2025-04-01T12:00:00Z"
+      },
+      {
+        "userId": 2,
+        "title": "Kyoto Calm",
+        "itineraryId": 20,
+        "isPrivate": true,
+        "modifiedAt": "2025-03-18T11:15:00Z"
+      },
+      {
+        "userId": 4,
+        "title": "Osaka Eats",
+        "itineraryId": 30,
+        "isPrivate": true,
+        "modifiedAt": "2025-04-07T12:20:00Z"
+      }
+    ]
+  },
+
+  "GET /api/itineraries/:itineraryId": {
+    "description": "Fetch a single itinerary which matching the itinerary Id",
+    "queries": [],
+    "exampleResponse": {
+      "userId": 1,
+      "title": "Tokyo Adventure",
+      "itineraryId": 1,
+      "isPrivate": false,
+      "modifiedAt": "2025-04-01T12:00:00Z"
+    }
+  },
+
+  "GET /api/itineraries/user/:username": {
+    "description": "serves an array of all itineraries which are related to that specific user",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "userId": 2,
+        "title": "Italian Getaway",
+        "itineraryId": 2,
+        "isPrivate": false,
+        "modifiedAt": "2025-03-15T08:30:00Z"
+      },
+      {
+        "userId": 2,
+        "title": "Paris in Spring",
+        "itineraryId": 6,
+        "isPrivate": true,
+        "modifiedAt": "2025-03-01T15:00:00Z"
+      }
+    ]
+  },
+
+  "PATCH /api/itineraries/:itineraryId": {
+    "description": "Restricted operation, only available to authorized logged in user can modify their own itineraries",
+    "queries": [],
+    "exampleResponse": {
+      "userId": 9,
+      "title": "Across Middle-earth - New Zealand",
+      "itineraryId": 31,
+      "isPrivate": true,
+      "modifiedAt": "2025-04-20T19:48:10.430676700Z"
+    },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
+    },
+
+  "POST /api/itineraries": {
+    "description": "Restricted operation, only available to authorized logged in user can post new itinerary",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "userId": 9,
+        "title": "Across Middle-earth",
+        "itineraryId": 31,
+        "isPrivate": false,
+        "modifiedAt": "2025-04-20T12:00:00Z"
+      },
+      "unauthorized": {
+        "path": "/api/users",
+        "error": "Forbidden",
+        "message": "Unauthorized access to operation",
+        "status": 403
+      }
+    }
+  },
+
+  "DELETE /api/itineraries/:itineraryId": {
+    "description": "Restricted operation, only available to authorized logged in user can delete their own itineraries",
+    "queries": [],
+    "exampleResponse": {
+      "message": "Itinerary Deleted Successfully"
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
   }
-
-
 }
