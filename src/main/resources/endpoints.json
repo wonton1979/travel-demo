@@ -115,8 +115,12 @@
       "authorized": {
         "message": "User deleted successfully."
       },
-      "username": "wanderer_joe",
-      "userId": 1
+      "unauthorized": {
+        "path": "/api/users",
+        "error": "Forbidden",
+        "message": "Unauthorized access to operation",
+        "status": 403
+      }
     }
   }
 

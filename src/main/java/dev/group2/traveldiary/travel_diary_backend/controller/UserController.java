@@ -1,4 +1,5 @@
 package dev.group2.traveldiary.travel_diary_backend.controller;
+import dev.group2.traveldiary.travel_diary_backend.dto.AuthorizedUserDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.service.UserService;
 import jakarta.servlet.http.Cookie;
@@ -59,10 +60,13 @@ public class UserController {
     }
 */
 
-    @PatchMapping("/username/{username}")
-    public ResponseEntity<UserDTO> modifyUser(@PathVariable String username, @RequestBody User user) {
-        User modifiedUser = userService.updateUser(username, user);
-        UserDTO modifiedUserDTO = new UserDTO(modifiedUser.getUsername(),modifiedUser.getUserId());
+    @PatchMapping
+    public ResponseEntity<Object> modifyUser(@AuthenticationPrincipal UserDetails userDetails, @RequestBody User user) {
+        if (userDetails == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation. Please login again."));
+        }
+        User modifiedUser = userService.updateUser(userDetails.getUsername(), user);
+        AuthorizedUserDTO modifiedUserDTO = new AuthorizedUserDTO(modifiedUser);
         return ResponseEntity.status(HttpStatus.OK).body(modifiedUserDTO);
     }
 
