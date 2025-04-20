@@ -35,6 +35,9 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<Map<String,String>> register(@RequestBody User user) {
+        if(userRepository.existsUserByUsernameOrEmail(user.getUsername(),user.getEmail())) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of("message","Username or Email already exists"));
+        }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message","User Registered Successfully"));
