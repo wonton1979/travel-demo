@@ -29,11 +29,13 @@ public class CustomErrorController implements ErrorController {
                 webRequest,
                 ErrorAttributeOptions.defaults()
         );
-
+        if ( (int) attributes.get("status") == 403) {
+            attributes.put("message", "Unauthorized access to operation");
+        }
         Map<String, Object> errorBody = new HashMap<>();
         errorBody.put("status", attributes.get("status"));
         errorBody.put("error", attributes.get("error"));
-        errorBody.put("message", "The endpoint does not exist.");
+        errorBody.put("message", attributes.get("message") != null ? attributes.get("message") : "No message available");
         errorBody.put("path", attributes.get("path"));
 
         return new ResponseEntity<>(errorBody, HttpStatus.NOT_FOUND);

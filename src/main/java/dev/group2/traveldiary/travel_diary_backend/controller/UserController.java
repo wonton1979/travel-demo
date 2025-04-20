@@ -3,6 +3,8 @@ import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.*;
 import dev.group2.traveldiary.travel_diary_backend.dto.UserDTO;
@@ -24,7 +26,7 @@ public class UserController {
         List<User> users = userService.findAll();
         List<UserDTO> UserDTOS = new ArrayList<>();
         for (User user : users) {
-            UserDTO dtoUser = new UserDTO(user.getUsername());
+            UserDTO dtoUser = new UserDTO(user.getUsername(),user.getUserId());
             UserDTOS.add(dtoUser);
         }
         return UserDTOS;
@@ -34,35 +36,39 @@ public class UserController {
     public ResponseEntity<UserDTO> fetchUserByUserId(@PathVariable Long userId) {
         System.out.println(userId);
         User user = userService.getUserByUserId(userId);
-        UserDTO userDTO = new UserDTO(user.getUsername());
+        UserDTO userDTO = new UserDTO(user.getUsername(),user.getUserId());
         return ResponseEntity.status(HttpStatus.OK).body(userDTO);
     }
 
     @GetMapping("/username/{username}")
     public ResponseEntity<UserDTO> getUserByUsername(@PathVariable String username) {
        User savedUser = userService.getUserByUsername(username);
-       UserDTO savedUserDTO = new UserDTO(savedUser.getUsername());
+       UserDTO savedUserDTO = new UserDTO(savedUser.getUsername(),savedUser.getUserId());
        return ResponseEntity.ok(savedUserDTO);
     }
 
+/*
     @PostMapping
     public ResponseEntity<UserDTO> createUser(@RequestBody User user) {
        User created = userService.createUser(user);
-       UserDTO createdUserDTO = new UserDTO(created.getUsername());
+       UserDTO createdUserDTO = new UserDTO(created.getUsername(), created.getUserId());
        return ResponseEntity.status(HttpStatus.CREATED).body(createdUserDTO);
     }
+*/
 
     @PatchMapping("/username/{username}")
     public ResponseEntity<UserDTO> modifyUser(@PathVariable String username, @RequestBody User user) {
         User modifiedUser = userService.updateUser(username, user);
-        UserDTO modifiedUserDTO = new UserDTO(modifiedUser.getUsername());
+        UserDTO modifiedUserDTO = new UserDTO(modifiedUser.getUsername(),modifiedUser.getUserId());
         return ResponseEntity.status(HttpStatus.OK).body(modifiedUserDTO);
     }
 
-    @DeleteMapping("/username/{username}")
-    public ResponseEntity<Map<String, Boolean>> deleteUser(@PathVariable String username) {
-        userService.deleteUser(username);
-        Map<String, Boolean> response = Map.of("deleted", true);
-        return ResponseEntity.status(HttpStatus.OK).body(response);
+    @DeleteMapping
+    public ResponseEntity<Map<String, Object>> deleteUser(@AuthenticationPrincipal UserDetails userDetails) {
+        if (userDetails == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation. Please login again."));
+        }
+        userService.deleteUser(userDetails.getUsername());
+        return ResponseEntity.status(HttpStatus.OK).body(Map.of("message", "User deleted successfully."));
     }
 }

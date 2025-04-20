@@ -71,7 +71,7 @@ public class UserService {
             userRepository.delete(userOptional.get());
         }
         else {
-            throw new RuntimeException("user not found");
+            throw new ContentNotFoundException("user not found");
         }
     }
 }

@@ -17,10 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -44,15 +41,13 @@ public class AuthController {
     }
 
     @GetMapping("/check-auth")
-    public ResponseEntity<List<Map<String,Object>>> checkAuth(Authentication auth) {
-        List<Map<String,Object>> responseRestful = new ArrayList<>();
+    public ResponseEntity<Map<String,Object>> checkAuth(Authentication auth) {
+        Map<String,Object> responseRestful = new HashMap<>();
         if (auth == null || !auth.isAuthenticated()) {
-            responseRestful.add(Map.of("isLoggedIn", false));
-            responseRestful.add(Map.of("loggedInUsername", ""));
+            responseRestful = Map.of("isLoggedIn", false,"loggedInUsername", "");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(responseRestful);
         }
-        responseRestful.add(Map.of("isLoggedIn", true));
-        responseRestful.add(Map.of("loggedInUsername", auth.getName()));
+        responseRestful = Map.of("isLoggedIn", true,"loggedInUsername", auth.getName());
         return ResponseEntity.ok(responseRestful);
     }
 
