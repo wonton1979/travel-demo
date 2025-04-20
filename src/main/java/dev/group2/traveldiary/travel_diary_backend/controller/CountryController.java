@@ -26,9 +26,9 @@ public class CountryController {
         return ResponseEntity.status(HttpStatus.CREATED).body(createdCountry);
     }
 
-    @GetMapping("/{name}")
-    public ResponseEntity<Country> getCountryByName(@PathVariable String name) {
-        Country country = countryService.findCountryByName(name);
+    @GetMapping("/{countryName}")
+    public ResponseEntity<Country> getCountryByName(@PathVariable String countryName) {
+        Country country = countryService.findCountryByName(countryName);
         return ResponseEntity.ok(country);
     }
 }

@@ -36,8 +36,8 @@ public class ItineraryController {
         return ResponseEntity.status(HttpStatus.OK).body(itineraryInfo);
     }
 
-    @GetMapping
-    public ResponseEntity<List<ItineraryDTO>> fetchItinerariesByUsername(@RequestParam("username") String username){
+    @GetMapping("/user/{username}")
+    public ResponseEntity<List<ItineraryDTO>> fetchItinerariesByUsername(@PathVariable String username){
         List<ItineraryDTO> itineraryDTOList = itineraryService.getItinerariesByUserName(username);
         return ResponseEntity.status(HttpStatus.OK).body(itineraryDTOList);
     }

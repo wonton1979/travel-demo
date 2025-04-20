@@ -17,6 +17,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -34,18 +37,23 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody User user) {
+    public ResponseEntity<Map<String,String>> register(@RequestBody User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
-        return ResponseEntity.ok("User registered");
+        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message","User Registered Successfully"));
     }
 
     @GetMapping("/check-auth")
-    public ResponseEntity<String> checkAuth(Authentication auth) {
+    public ResponseEntity<List<Map<String,Object>>> checkAuth(Authentication auth) {
+        List<Map<String,Object>> responseRestful = new ArrayList<>();
         if (auth == null || !auth.isAuthenticated()) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Not logged in");
+            responseRestful.add(Map.of("isLoggedIn", false));
+            responseRestful.add(Map.of("loggedInUsername", ""));
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(responseRestful);
         }
-        return ResponseEntity.ok("Logged in as: " + auth.getName());
+        responseRestful.add(Map.of("isLoggedIn", true));
+        responseRestful.add(Map.of("loggedInUsername", auth.getName()));
+        return ResponseEntity.ok(responseRestful);
     }
 
     @PostMapping("/login")
