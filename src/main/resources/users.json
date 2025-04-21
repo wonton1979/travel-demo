@@ -27,7 +27,7 @@
     "email": "mike@example.com",
     "bio": "Backpacking one trail at a time.",
     "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
-    "isPrivate": true
+    "isPrivate": false
   },
   {
     "username": "traveldiaries_lisa",
@@ -38,5 +38,4 @@
     "bio": "Photographer with a passion for cultures.",
     "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
     "isPrivate": false
-  }
 ]

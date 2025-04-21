@@ -47,7 +47,12 @@ public class ItineraryController {
 
     @GetMapping("/user/{username}")
     public ResponseEntity<List<ItineraryDTO>> fetchItinerariesByUsername(@PathVariable String username){
-        List<ItineraryDTO> itineraryDTOList = itineraryService.getItinerariesByUserName(username);
+        List<Itinerary> itineraryList = itineraryService.getItinerariesByUserName(username);
+        List<ItineraryDTO> itineraryDTOList = new java.util.ArrayList<>();
+        for (Itinerary itinerary : itineraryList) {
+            ItineraryDTO itineraryDTO = new ItineraryDTO(itinerary);
+            itineraryDTOList.add(itineraryDTO);
+        }
         return ResponseEntity.status(HttpStatus.OK).body(itineraryDTOList);
     }
 

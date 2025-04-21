@@ -25,7 +25,7 @@ public class AuthorizedUserDTO {
         this.firstName = user.getFirstName();
         this.lastName = user.getLastName();
         this.email = user.getEmail();
-        this.isPrivate = user.getPrivate();
+        this.isPrivate = user.getIsPrivate();
         this.profilePicUrl = user.getProfilePicUrl();
         this.bio = user.getBio();
         this.userId = user.getUserId();

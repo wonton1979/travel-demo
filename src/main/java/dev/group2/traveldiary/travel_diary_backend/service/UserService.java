@@ -11,8 +11,10 @@ import java.util.List;
 @Service
 public class UserService {
     private final UserRepository userRepository;
+    private final ItineraryService itineraryService;
 
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, ItineraryService itineraryService) {
+        this.itineraryService = itineraryService;
         this.userRepository = userRepository;
     }
 
@@ -59,6 +61,17 @@ public class UserService {
             }
             if(user.getProfilePicUrl() != null) {
                 existingUser.setProfilePicUrl(user.getProfilePicUrl());
+            }
+            if(user.getIsPrivate() != null) {
+                if(user.getIsPrivate()) {
+                    existingUser.setIsPrivate(true);
+                    itineraryService.getItinerariesByUserName(username).forEach(itinerary -> {
+                        itinerary.setIsPrivate(true);
+                    });
+                }
+                else {
+                    existingUser.setIsPrivate(false);
+                }
             }
             return userRepository.save(existingUser);
         }

@@ -65,13 +65,8 @@ public class ItineraryService {
         return itineraryDTOS;
     }
 
-    public List<ItineraryDTO> getItinerariesByUserName(String username) {
-        List<ItineraryDTO> itineraryDTOS = new ArrayList<>();
-        List<Itinerary> itineraryList = itineraryRepository.findAllByUser_Username(username);
-        for(Itinerary itinerary : itineraryList){
-            itineraryDTOS.add(new ItineraryDTO(itinerary));
-        }
-        return itineraryDTOS;
+    public List<Itinerary> getItinerariesByUserName(String username) {
+        return itineraryRepository.findAllByUser_Username(username);
     }
 
     public ItineraryDTO updateItinerary(Long itineraryId,String title, Boolean isPrivate){
