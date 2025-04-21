@@ -77,7 +77,17 @@ public class PhotoController {
     }
 
     @DeleteMapping("/{photoId}")
-    public ResponseEntity<Map<String,String>> deletePhoto(@PathVariable Long photoId) throws IOException {
+    public ResponseEntity<Map<String,String>> deletePhoto(@PathVariable Long photoId,@AuthenticationPrincipal UserDetails userDetails) throws IOException {
+        if (userDetails == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation."));
+        }
+        User user = userRepository.findByUsername(userDetails.getUsername()).orElseThrow();
+        Photo currentPhoto = photoRepository.getPhotoByPhotoId(photoId);
+        Activity activity = activityService.getActivityEntityById(currentPhoto.getActivity().getActivityId());
+        Long itineraryUserId = itineraryService.getItineraryById(activity.getItinerary().getItineraryId()).getUserId();
+        if(!itineraryUserId.equals(user.getUserId())){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation."));
+        }
         photoService.deletePhoto(photoId);
         return ResponseEntity.status(HttpStatus.OK).body(Map.of("message","Photo Deleted Successfully"));
     }
@@ -87,7 +97,16 @@ public class PhotoController {
                                               @RequestParam MultipartFile file,
                                               @RequestParam("caption") String caption,
                                               @AuthenticationPrincipal UserDetails userDetails) throws IOException {
-
+        if (userDetails == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation."));
+        }
+        User user = userRepository.findByUsername(userDetails.getUsername()).orElseThrow();
+        Photo currentPhoto = photoRepository.getPhotoByPhotoId(photoId);
+        Activity activity = activityService.getActivityEntityById(currentPhoto.getActivity().getActivityId());
+        Long itineraryUserId = itineraryService.getItineraryById(activity.getItinerary().getItineraryId()).getUserId();
+        if(!itineraryUserId.equals(user.getUserId())){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation."));
+        }
         return ResponseEntity.status(HttpStatus.OK).body(photoService.updatePhoto(photoId,file,caption));
 
     }

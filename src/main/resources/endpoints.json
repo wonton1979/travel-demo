@@ -443,7 +443,6 @@
         "message": "Unauthorized operation."
       }
     }
-
   },
 
   "GET /api/photos/:photoId": {
@@ -486,19 +485,33 @@
     }
   },
 
-  "PATCH /api/photos": {
+  "PATCH /api/photos/:photoId": {
     "description": "Restricted operation, only available to authorized logged in user can modify existing photos which belong to themself",
     "queries": [],
     "exampleResponse": {
       "authorized": {
         "activityId": 37,
-        "caption": "Bangkok Street Food 1",
-        "imgUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745242584/lureexdv85nfgdessldh.png",
-        "createdAt": "2025-04-21T14:21:00Z"
+        "caption": "Bangkok Street Food 20",
+        "imgUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745246982/g3iniuwl0rlrrxekjhkn.jpg",
+        "createdAt": "2025-04-21T14:49:42.514848Z"
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
+    }
+  },
+
+  "DELETE /api/photos/:photoId": {
+    "description": "Restricted operation, only available to authorized logged in user can delete their own photos",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "message": "Photo Deleted Successfully"
       },
       "unauthorized": {
         "message": "Unauthorized operation."
       }
     }
   }
+
 }
