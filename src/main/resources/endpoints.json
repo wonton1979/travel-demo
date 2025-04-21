@@ -383,6 +383,57 @@
     "unauthorized": {
       "message": "Unauthorized operation."
     }
+  },
+
+  "GET /api/favourites": {
+    "description": "serves an array of all favourite itineraries id of current logged in user ",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "itineraryId": 2,
+        "userId": 1
+      },
+      {
+        "itineraryId": 3,
+        "userId": 1
+      },
+      {
+        "itineraryId": 8,
+        "userId": 1
+      },
+      {
+        "itineraryId": 6,
+        "userId": 1
+      },
+      {
+        "itineraryId": 5,
+        "userId": 1
+      }
+    ]
+  },
+
+  "POST /api/favourites": {
+    "description": "Restricted operation, only available to authorized logged in user can like other user's itineraries",
+    "queries": [],
+    "exampleResponse": {
+      "itineraryId": 7,
+      "userId": 1,
+      "favouriteId": 21
+    },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
+    },
+
+  "DELETE /api/favourites/:favouriteId": {
+    "description": "Restricted operation, only available to authorized logged in user can delete their own favourite itinerary",
+    "queries": [],
+    "exampleResponse": {
+      "message": "favourite Deleted Successfully"
+    },
+    "unauthorized": {
+      "message": "Unauthorized operation."
+    }
   }
 
 }

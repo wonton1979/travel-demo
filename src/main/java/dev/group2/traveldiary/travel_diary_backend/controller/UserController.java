@@ -38,7 +38,6 @@ public class UserController {
 
     @GetMapping("/user_id/{userId}")
     public ResponseEntity<UserDTO> fetchUserByUserId(@PathVariable Long userId) {
-        System.out.println(userId);
         User user = userService.getUserByUserId(userId);
         UserDTO userDTO = new UserDTO(user.getUsername(),user.getUserId());
         return ResponseEntity.status(HttpStatus.OK).body(userDTO);

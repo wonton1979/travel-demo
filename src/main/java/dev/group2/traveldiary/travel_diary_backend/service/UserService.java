@@ -1,4 +1,5 @@
 package dev.group2.traveldiary.travel_diary_backend.service;
+import dev.group2.traveldiary.travel_diary_backend.dto.UserDTO;
 import dev.group2.traveldiary.travel_diary_backend.exception.ContentNotFoundException;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
@@ -20,8 +21,9 @@ public class UserService {
     }
 
     public User getUserByUserId(Long userId) {
-        if(userRepository.existsUserByUserId(userId)) {
-            return userRepository.findByUserId(userId);
+        Optional<User> userOptional = userRepository.findByUserId(userId);
+        if(userOptional.isPresent()) {
+            return userOptional.get();
         }
         else {
             throw new ContentNotFoundException("User not found");

@@ -26,9 +26,14 @@ public class ItineraryService {
 
     public Itinerary addItinerary(@RequestBody Itinerary itinerary) {
         Long userId = itinerary.getUser().getUserId();
-        User itineraryUser = userRepository.findByUserId(userId);
-        itinerary.setUser(itineraryUser);
-        return itineraryRepository.save(itinerary);
+        Optional<User> itineraryUser = userRepository.findByUserId(userId);
+        if (itineraryUser.isPresent()) {
+            itinerary.setUser(itineraryUser.get());
+            return itineraryRepository.save(itinerary);
+        }
+        else{
+            throw new ContentNotFoundException("User not found");
+        }
     }
 
     public ItineraryDTO getItineraryById(Long itineraryId) {
