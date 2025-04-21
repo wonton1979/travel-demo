@@ -150,7 +150,7 @@
   },
 
   "GET /api/itineraries/country/:countryName": {
-    "description": "serves an array of all itineraries which are related to that specific country",
+    "description": "serves an array of all itineraries which are related to that specific country.",
     "queries": [],
     "exampleResponse": [
       {
@@ -318,10 +318,12 @@
     "description": "Restricted operation, only available to authorized logged in user can delete their own activity",
     "queries": [],
     "exampleResponse": {
-      "message": "Activity Deleted Successfully"
-    },
-    "unauthorized": {
-      "message": "Unauthorized operation."
+      "authorized": {
+        "message": "Activity Deleted Successfully"
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
     }
   },
 
@@ -365,12 +367,14 @@
     "description": "Restricted operation, only available to authorized logged in user can modify their own notes",
     "queries": [],
     "exampleResponse": {
-      "activityId": 52,
-      "text": "Book tickets in advance — tours often sell out.",
-      "noteId": 28
-    },
-    "unauthorized": {
-      "message": "Unauthorized operation."
+      "authorized": {
+        "activityId": 52,
+        "text": "Book tickets in advance — tours often sell out.",
+        "noteId": 28
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
     }
   },
 
@@ -386,7 +390,7 @@
   },
 
   "GET /api/favourites": {
-    "description": "serves an array of all favourite itineraries id of current logged in user ",
+    "description": "serves an array of all favourite itineraries id of current logged in user.",
     "queries": [],
     "exampleResponse": [
       {
@@ -416,24 +420,85 @@
     "description": "Restricted operation, only available to authorized logged in user can like other user's itineraries",
     "queries": [],
     "exampleResponse": {
-      "itineraryId": 7,
-      "userId": 1,
-      "favouriteId": 21
-    },
+      "authorized": {
+        "itineraryId": 7,
+        "userId": 1,
+        "favouriteId": 21
+      },
       "unauthorized": {
         "message": "Unauthorized operation."
       }
+    }
+
     },
 
   "DELETE /api/favourites/:favouriteId": {
     "description": "Restricted operation, only available to authorized logged in user can delete their own favourite itinerary",
     "queries": [],
     "exampleResponse": {
-      "message": "favourite Deleted Successfully"
-    },
-    "unauthorized": {
-      "message": "Unauthorized operation."
+      "authorized": {
+        "message": "favourite Deleted Successfully"
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
+    }
+
+  },
+
+  "GET /api/photos/:photoId": {
+    "description": "Fetch a single photo details which matching the photo id",
+    "queries": [],
+    "exampleResponse": {
+      "activityId": 1,
+      "caption": "Temple entrance",
+      "imgUrl": "https://picsum.photos/id/1/200/300",
+      "createdAt": "2025-03-11T19:57:00Z"
+    }
+  },
+
+  "GET /api/photos/activity/:activityId": {
+    "description": "serves an array of all photos which are related to that specific activity.",
+    "queries": [],
+    "exampleResponse": [
+      {
+        "activityId": 2,
+        "caption": "Fresh sushi platter",
+        "imgUrl": "https://picsum.photos/id/1/200/300",
+        "createdAt": "2025-03-01T17:22:00Z"
+      }
+    ]
+  },
+
+  "POST /api/photos": {
+    "description": "Restricted operation, only available to authorized logged in user can post new photos",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "activityId": 37,
+        "caption": "Bangkok Street Food 1",
+        "imgUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745242584/lureexdv85nfgdessldh.png",
+        "createdAt": "2025-04-21T14:21:00Z"
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
+    }
+  },
+
+  "PATCH /api/photos": {
+    "description": "Restricted operation, only available to authorized logged in user can modify existing photos which belong to themself",
+    "queries": [],
+    "exampleResponse": {
+      "authorized": {
+        "activityId": 37,
+        "caption": "Bangkok Street Food 1",
+        "imgUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745242584/lureexdv85nfgdessldh.png",
+        "createdAt": "2025-04-21T14:21:00Z"
+      },
+      "unauthorized": {
+        "message": "Unauthorized operation."
+      }
     }
   }
-
 }

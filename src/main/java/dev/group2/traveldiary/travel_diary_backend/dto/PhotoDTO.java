@@ -7,11 +7,13 @@ import java.time.Instant;
 public class PhotoDTO {
     private final Long activityId;
     private final String caption;
+    private final String imgUrl;
     private final Instant createdAt;
     public PhotoDTO(Photo photo){
         this.activityId = photo.getActivity().getActivityId();
         this.caption = photo.getCaption();
         this.createdAt = photo.getModifiedAt();
+        this.imgUrl = photo.getImgUrl();
     }
 
     public Long getActivityId() {
@@ -22,5 +24,8 @@ public class PhotoDTO {
     }
     public Instant getCreatedAt() {
         return createdAt;
+    }
+    public String getImgUrl() {
+        return imgUrl;
     }
 }
