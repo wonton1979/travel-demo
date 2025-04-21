@@ -3,6 +3,8 @@ import dev.group2.traveldiary.travel_diary_backend.model.Itinerary;
 import dev.group2.traveldiary.travel_diary_backend.exception.ContentNotFoundException;
 import dev.group2.traveldiary.travel_diary_backend.repository.ItineraryRepository;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import dev.group2.traveldiary.travel_diary_backend.dto.ItineraryDTO;
@@ -56,13 +58,14 @@ public class ItineraryService {
         }
     }
 
-    public List<ItineraryDTO>  getItinerariesByCountryName(String countryName) {
-        List<ItineraryDTO> itineraryDTOS = new ArrayList<>();
-        List<Itinerary> itineraryList = itineraryRepository.findAllByCountry_CountryName(countryName);
-        for(Itinerary itinerary : itineraryList){
-            itineraryDTOS.add(new ItineraryDTO(itinerary));
-        }
-        return itineraryDTOS;
+    public Page<ItineraryDTO> getItinerariesByCountryName(String countryName, Pageable pageable) {
+        return itineraryRepository.findAllByCountry_CountryName(countryName, pageable)
+                .map(itinerary -> new ItineraryDTO(itinerary));
+    }
+
+    public Page<ItineraryDTO> getItinerariesByUserName(String username,Pageable pageable) {
+        return itineraryRepository.findAllByUser_Username(username,pageable)
+                .map(itinerary -> new ItineraryDTO(itinerary));
     }
 
     public List<Itinerary> getItinerariesByUserName(String username) {

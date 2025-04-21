@@ -4,6 +4,10 @@ import dev.group2.traveldiary.travel_diary_backend.dto.ItineraryDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import dev.group2.traveldiary.travel_diary_backend.service.ItineraryService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -34,8 +38,11 @@ public class ItineraryController {
     }
 
     @GetMapping("/country/{countryName}")
-    public ResponseEntity <List<ItineraryDTO>> fetchItinerariesByCountryName(@PathVariable String countryName){
-        List<ItineraryDTO> itinerariesResult = itineraryService.getItinerariesByCountryName(countryName);
+    public ResponseEntity <Page<ItineraryDTO>> fetchItinerariesByCountryName(@PathVariable String countryName,
+                                                                             @RequestParam(defaultValue = "0") int page,
+                                                                             @RequestParam(defaultValue = "6") int size){
+        Pageable pageable = PageRequest.of(page,size, Sort.by("modifiedAt").descending());
+        Page<ItineraryDTO> itinerariesResult = itineraryService.getItinerariesByCountryName(countryName,pageable);
         return ResponseEntity.status(HttpStatus.OK).body(itinerariesResult);
     }
 
@@ -46,13 +53,11 @@ public class ItineraryController {
     }
 
     @GetMapping("/user/{username}")
-    public ResponseEntity<List<ItineraryDTO>> fetchItinerariesByUsername(@PathVariable String username){
-        List<Itinerary> itineraryList = itineraryService.getItinerariesByUserName(username);
-        List<ItineraryDTO> itineraryDTOList = new java.util.ArrayList<>();
-        for (Itinerary itinerary : itineraryList) {
-            ItineraryDTO itineraryDTO = new ItineraryDTO(itinerary);
-            itineraryDTOList.add(itineraryDTO);
-        }
+    public ResponseEntity<Page<ItineraryDTO>> fetchItinerariesByUsername(@PathVariable String username,
+                                                                         @RequestParam(defaultValue = "0") int page,
+                                                                         @RequestParam(defaultValue = "6") int size){
+        Pageable pageable = PageRequest.of(page,size, Sort.by("modifiedAt").descending());
+        Page<ItineraryDTO> itineraryDTOList = itineraryService.getItinerariesByUserName(username,pageable);
         return ResponseEntity.status(HttpStatus.OK).body(itineraryDTOList);
     }
 
