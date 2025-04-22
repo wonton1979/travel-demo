@@ -1,52 +1,1248 @@
 [
   {
-    "countryName": "Japan",
-    "description": "Land of the Rising Sun",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Aruba",
+    "description": "A Caribbean paradise known for its stunning beaches and vibrant nightlife, Aruba offers a unique blend of cultures and experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/aw.png"
   },
   {
-    "countryName": "Italy",
-    "description": "Rich in art and history",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Afghanistan",
+    "description": "Rich in history and diverse landscapes, Afghanistan is a tapestry of ancient traditions and breathtaking mountains.",
+    "countryPicUrl": "https://flagcdn.com/w2560/af.png"
   },
   {
-    "countryName": "Brazil",
-    "description": "Vibrant culture and festivals",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Angola",
+    "description": "A treasure trove of natural beauty, Angola boasts stunning coastlines, lush rainforests, and a dynamic cultural scene.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ao.png"
   },
   {
-    "countryName": "Canada",
-    "description": "Home to wilderness and mountains",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Anguilla",
+    "description": "Known for its pristine white-sand beaches and crystal-clear waters, Anguilla is a haven for relaxation and luxury.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ai.png"
+  },
+  {
+    "countryName": "Åland Islands",
+    "description": "With its charming archipelago, Åland Islands offer a peaceful retreat with scenic landscapes and vibrant local customs.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ax.png"
+  },
+  {
+    "countryName": "Albania",
+    "description": "A hidden gem in the Balkans, Albania's stunning coastlines, ancient ruins, and hospitable locals make it an adventurer's paradise.",
+    "countryPicUrl": "https://flagcdn.com/w2560/al.png"
+  },
+  {
+    "countryName": "Andorra",
+    "description": "Nestled in the Pyrenees, Andorra is renowned for its ski resorts and hiking trails, offering breathtaking mountain vistas.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ad.png"
+  },
+  {
+    "countryName": "United Arab Emirates",
+    "description": "A blend of tradition and modernity, the UAE captivates with its futuristic skyscrapers, rich history, and luxurious resorts.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ae.png"
+  },
+  {
+    "countryName": "Argentina",
+    "description": "Famous for tango and Malbec, Argentina features breathtaking landscapes from the Andes to the Pampas and vibrant city life.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ar.png"
+  },
+  {
+    "countryName": "Armenia",
+    "description": "One of the oldest nations in the world, Armenia is home to majestic mountains, ancient churches, and a rich cultural heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/am.png"
+  },
+  {
+    "countryName": "American Samoa",
+    "description": "A stunning tropical paradise in the South Pacific, American Samoa is known for its rugged coastlines, volcanoes, and rich traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/as.png"
+  },
+  {
+    "countryName": "Antarctica",
+    "description": "The ultimate frontier for explorers, Antarctica is a vast, icy landscape teeming with wildlife, stunning icebergs, and scientific research.",
+    "countryPicUrl": "https://flagcdn.com/w2560/aq.png"
+  },
+  {
+    "countryName": "French Southern Territories",
+    "description": "An isolated and pristine natural environment, the French Southern Territories are a unique blend of unspoiled landscapes and scientific curiosity.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tf.png"
+  },
+  {
+    "countryName": "Antigua and Barbuda",
+    "description": "With 365 beaches, Antigua and Barbuda boast beautiful shores coupled with a rich historical backdrop of colonial architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ag.png"
   },
   {
     "countryName": "Australia",
-    "description": "Outback adventures",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "description": "Celebrated for its diverse ecosystems, Australia offers stunning landscapes from the Great Barrier Reef to the Outback's rugged beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/au.png"
+  },
+  {
+    "countryName": "Austria",
+    "description": "A paradise for music lovers and art enthusiasts, Austria is filled with imperial palaces, classical music heritage, and stunning mountain scenery.",
+    "countryPicUrl": "https://flagcdn.com/w2560/at.png"
+  },
+  {
+    "countryName": "Azerbaijan",
+    "description": "Where East meets West, Azerbaijan blends traditional culture with modernity, featuring stunning landscapes and vibrant urban life.",
+    "countryPicUrl": "https://flagcdn.com/w2560/az.png"
+  },
+  {
+    "countryName": "Burundi",
+    "description": "Rich in culture and traditions, Burundi is known for its picturesque lakes and vibrant community festivals that showcase its heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bi.png"
+  },
+  {
+    "countryName": "Belgium",
+    "description": "Famous for chocolates and beers, Belgium offers a feast for the senses with historic cities and stunning medieval architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/be.png"
+  },
+  {
+    "countryName": "Benin",
+    "description": "A nation steeped in rich history, Benin is known for its vibrant art, diverse culture, and sacred sites related to the Vodun religion.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bj.png"
+  },
+  {
+    "countryName": "Bonaire, Sint Eustatius and Saba",
+    "description": "This Caribbean trio is celebrated for its stunning dive spots, rich biodiversity, and commitment to environmental conservation.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bq.png"
+  },
+  {
+    "countryName": "Burkina Faso",
+    "description": "Known for its welcoming people and dynamic arts scene, Burkina Faso features vibrant markets and cultural festivals.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bf.png"
+  },
+  {
+    "countryName": "Bangladesh",
+    "description": "A vibrant tapestry of cultures, Bangladesh is rich in natural beauty with its lush landscapes and thriving rivers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bd.png"
+  },
+  {
+    "countryName": "Bulgaria",
+    "description": "A lovely blend of ancient history and beautiful landscapes, Bulgaria is known for its Black Sea coast and rich folklore.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bg.png"
+  },
+  {
+    "countryName": "Bahrain",
+    "description": "As a small island kingdom, Bahrain is known for its modern architecture, rich history, and being a center for finance and culture in the Gulf.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bh.png"
+  },
+  {
+    "countryName": "Bahamas",
+    "description": "Famed for its stunning beaches and crystal-clear waters, the Bahamas is an ideal destination for sun-seekers and adventure lovers alike.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bs.png"
+  },
+  {
+    "countryName": "Bosnia and Herzegovina",
+    "description": "With a complex history and beautiful landscapes, Bosnia and Herzegovina offer travelers a glimpse into its rich cultural tapestry.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ba.png"
+  },
+  {
+    "countryName": "Saint Barthélemy",
+    "description": "A chic Caribbean retreat, Saint Barthélemy is known for exclusive resorts, stunning beaches, and a vibrant dining scene.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bl.png"
+  },
+  {
+    "countryName": "Belarus",
+    "description": "Known for its rich history and numerous castles, Belarus offers a unique blend of Eastern European charm and vibrant urban culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/by.png"
+  },
+  {
+    "countryName": "Belize",
+    "description": "A haven for nature lovers, Belize boasts stunning coral reefs, lush jungles, and ancient Mayan ruins to explore.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bz.png"
+  },
+  {
+    "countryName": "Bermuda",
+    "description": "Famous for its pink sand beaches and colorful architecture, Bermuda offers a unique blend of British charm and island beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bm.png"
+  },
+  {
+    "countryName": "Bolivia, Plurinational State of",
+    "description": "Home to the majestic Salar de Uyuni and rich cultural diversity, Bolivia is a land of breathtaking natural wonders and traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bo.png"
+  },
+  {
+    "countryName": "Brazil",
+    "description": "From the Amazon rainforest to vibrant Rio de Janeiro, Brazil is a land of incredible biodiversity and rich cultural heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/br.png"
+  },
+  {
+    "countryName": "Barbados",
+    "description": "A tropical paradise with stunning beaches and vibrant culture, Barbados is the perfect destination for relaxation and exploration.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bb.png"
+  },
+  {
+    "countryName": "Brunei Darussalam",
+    "description": "A small but affluent nation, Brunei is known for its stunning mosques, rich culture, and lush rainforests.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bn.png"
+  },
+  {
+    "countryName": "Bhutan",
+    "description": "Famed for its majestic monasteries and stunning landscapes, Bhutan is a sanctuary of spirituality and tranquility.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bt.png"
+  },
+  {
+    "countryName": "Bouvet Island",
+    "description": "A remote Norwegian territory, Bouvet Island is known for its stark beauty and thriving wildlife, primarily seabirds.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bv.png"
+  },
+  {
+    "countryName": "Botswana",
+    "description": "Renowned for its wildlife and natural beauty, Botswana is home to the Okavango Delta, one of the world's largest inland deltas.",
+    "countryPicUrl": "https://flagcdn.com/w2560/bw.png"
+  },
+  {
+    "countryName": "Central African Republic",
+    "description": "Rich in wildlife and natural beauty, the Central African Republic is home to diverse ecosystems and unique cultural traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cf.png"
+  },
+  {
+    "countryName": "Canada",
+    "description": "From the stunning Rocky Mountains to bustling cities, Canada is a vast landscape of diverse cultures and natural wonders.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ca.png"
+  },
+  {
+    "countryName": "Cocos (Keeling) Islands",
+    "description": "A slice of paradise in the Indian Ocean, the Cocos (Keeling) Islands offer pristine beaches and a rich marine ecosystem.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cc.png"
+  },
+  {
+    "countryName": "Switzerland",
+    "description": "Known for its stunning alpine landscapes and charming cities, Switzerland offers a perfect blend of outdoor adventures and cultural experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ch.png"
+  },
+  {
+    "countryName": "Chile",
+    "description": "Home to some of the world's most diverse landscapes, Chile offers everything from the peaks of the Andes to the landscapes of Patagonia.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cl.png"
+  },
+  {
+    "countryName": "China",
+    "description": "A cultural epicenter, China boasts an incredible history, rich traditions, and stunning landscapes, from the Great Wall to vibrant cities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cn.png"
+  },
+  {
+    "countryName": "Côte d'Ivoire",
+    "description": "Rich in cultural diversity, Côte d'Ivoire offers stunning beaches, vibrant cities, and a deep-rooted history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ci.png"
+  },
+  {
+    "countryName": "Cameroon",
+    "description": "Known as 'Africa in miniature,' Cameroon features diverse landscapes and rich cultural heritage across its many regions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cm.png"
+  },
+  {
+    "countryName": "Congo, The Democratic Republic of the",
+    "description": "A biodiversity hotspot, the Democratic Republic of Congo is home to lush rainforests and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cd.png"
+  },
+  {
+    "countryName": "Congo",
+    "description": "With rich natural resources and vibrant cultures, the Republic of Congo offers stunning landscapes and a wealth of traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cg.png"
+  },
+  {
+    "countryName": "Cook Islands",
+    "description": "A tropical paradise in the South Pacific, the Cook Islands are known for stunning beaches, friendly locals, and island hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ck.png"
+  },
+  {
+    "countryName": "Colombia",
+    "description": "Nestled between mountains and the Caribbean Sea, Colombia is a vibrant country rich in culture, history, and biodiversity.",
+    "countryPicUrl": "https://flagcdn.com/w2560/co.png"
+  },
+  {
+    "countryName": "Comoros",
+    "description": "A stunning archipelago, the Comoros offers lush landscapes, beautiful beaches, and a unique blend of cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/km.png"
+  },
+  {
+    "countryName": "Cabo Verde",
+    "description": "An archipelago with beautiful beaches and vibrant culture, Cabo Verde is known for its music, warm climate, and friendly people.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cv.png"
+  },
+  {
+    "countryName": "Costa Rica",
+    "description": "A paradise for nature lovers, Costa Rica is known for its rich biodiversity, pristine beaches, and eco-friendly ethos.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cr.png"
+  },
+  {
+    "countryName": "Cuba",
+    "description": "Famous for its vibrant culture and classic cars, Cuba offers stunning beaches, rich history, and beautiful colonial architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cu.png"
+  },
+  {
+    "countryName": "Curaçao",
+    "description": "Known for its colorful architecture and vibrant culture, Curaçao is a Caribbean island that is rich in history and natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cw.png"
+  },
+  {
+    "countryName": "Christmas Island",
+    "description": "Famous for its unique ecology and red crabs, Christmas Island is a remote Australian territory full of natural wonders.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cx.png"
+  },
+  {
+    "countryName": "Cayman Islands",
+    "description": "A premier diving destination, the Cayman Islands are famous for their clear waters, coral reefs, and luxurious resorts.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ky.png"
+  },
+  {
+    "countryName": "Cyprus",
+    "description": "With a rich historical background and beautiful coastlines, Cyprus is an island country known for its diverse culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cy.png"
+  },
+  {
+    "countryName": "Czechia",
+    "description": "A gem in Central Europe, Czechia is renowned for its stunning architecture, historical towns, and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/cz.png"
+  },
+  {
+    "countryName": "Germany",
+    "description": "A country of history and innovation, Germany is known for its iconic landmarks, rich culture, and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/de.png"
+  },
+  {
+    "countryName": "Djibouti",
+    "description": "Strategically located at the crossroads of Africa and the Middle East, Djibouti features stunning landscapes and rich marine life.",
+    "countryPicUrl": "https://flagcdn.com/w2560/dj.png"
+  },
+  {
+    "countryName": "Dominica",
+    "description": "Known as the 'Nature Island,' Dominica boasts lush rainforests, hot springs, and some of the most stunning hiking trails in the Caribbean.",
+    "countryPicUrl": "https://flagcdn.com/w2560/dm.png"
+  },
+  {
+    "countryName": "Denmark",
+    "description": "A Nordic country known for its happy citizens, Denmark offers stunning architecture, rich history, and beautiful coastlines.",
+    "countryPicUrl": "https://flagcdn.com/w2560/dk.png"
+  },
+  {
+    "countryName": "Dominican Republic",
+    "description": "Home to stunning beaches and vibrant culture, the Dominican Republic is a tropical paradise with a rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/do.png"
+  },
+  {
+    "countryName": "Algeria",
+    "description": "A land of contrasts, Algeria features vast deserts, beautiful coastal cities, and a rich history that dates back to ancient times.",
+    "countryPicUrl": "https://flagcdn.com/w2560/dz.png"
+  },
+  {
+    "countryName": "Ecuador",
+    "description": "With the Andes running through it, Ecuador is rich in biodiversity and history, offering unique experiences from the Amazon to the Galapagos.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ec.png"
+  },
+  {
+    "countryName": "Egypt",
+    "description": "Famed for its ancient history and majestic pyramids, Egypt is a land of wonders that offers a glimpse into the past.",
+    "countryPicUrl": "https://flagcdn.com/w2560/eg.png"
+  },
+  {
+    "countryName": "Eritrea",
+    "description": "Blessed with beautiful coastlines and diverse cultures, Eritrea is known for its rich history and stunning natural landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/er.png"
+  },
+  {
+    "countryName": "Western Sahara",
+    "description": "A largely uninhabited territory, Western Sahara features stunning landscapes of deserts and coastlines, reflecting its rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/eh.png"
+  },
+  {
+    "countryName": "Spain",
+    "description": "A vibrant country known for its rich history, art, and culinary delights, Spain captivates with culture and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/es.png"
+  },
+  {
+    "countryName": "Estonia",
+    "description": "A digital society with rich medieval history, Estonia blends modernity with stunning natural beauty, and picturesque towns.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ee.png"
+  },
+  {
+    "countryName": "Ethiopia",
+    "description": "Rich in history and culture, Ethiopia is known for its ancient churches, diverse landscapes, and unique traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/et.png"
+  },
+  {
+    "countryName": "Finland",
+    "description": "Renowned for its beautiful nature, design innovation, and the magical Northern Lights, Finland is a country full of contrasts.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fi.png"
+  },
+  {
+    "countryName": "Fiji",
+    "description": "A perfect tropical paradise, Fiji is famous for its stunning coral reefs, warm hospitality, and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fj.png"
+  },
+  {
+    "countryName": "Falkland Islands (Malvinas)",
+    "description": "A remote archipelago with rich wildlife, the Falkland Islands are known for their rugged beauty and fascinating history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fk.png"
   },
   {
     "countryName": "France",
-    "description": "Gourmet food and romance",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "description": "From art to gastronomy, France is a cultural capital known for its stunning landscapes, historic landmarks, and culinary experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fr.png"
   },
   {
-    "countryName": "Thailand",
-    "description": "Land of Smiles",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Faroe Islands",
+    "description": "With dramatic cliffs and vibrant bird life, the Faroe Islands offer breathtaking landscapes and rich Viking heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fo.png"
+  },
+  {
+    "countryName": "Micronesia, Federated States of",
+    "description": "A peaceful paradise with stunning lagoons and rich cultural traditions, Micronesia is perfect for diving and water sports.",
+    "countryPicUrl": "https://flagcdn.com/w2560/fm.png"
+  },
+  {
+    "countryName": "Gabon",
+    "description": "Rich in wildlife and nature, Gabon is home to lush rainforests and a commitment to conservation and protected areas.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ga.png"
+  },
+  {
+    "countryName": "United Kingdom",
+    "description": "A nation with a rich history and diverse cultures, the UK boasts stunning landmarks and vibrant cities steeped in tradition.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gb.png"
+  },
+  {
+    "countryName": "Georgia",
+    "description": "With rich history and stunning landscapes, Georgia is famous for its hospitality, delicious food, and ancient wine-making traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ge.png"
+  },
+  {
+    "countryName": "Guernsey",
+    "description": "A beautiful island with a unique history, Guernsey offers stunning coastlines, quaint towns, and a vibrant local culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gg.png"
+  },
+  {
+    "countryName": "Ghana",
+    "description": "A vibrant country known for its rich culture, diverse wildlife, and welcoming people, Ghana is steeped in history and tradition.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gh.png"
+  },
+  {
+    "countryName": "Gibraltar",
+    "description": "Famous for its iconic rock and strategic location, Gibraltar offers a mix of British heritage and stunning Mediterranean views.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gi.png"
+  },
+  {
+    "countryName": "Guinea",
+    "description": "A land of diverse cultures and rich natural resources, Guinea features stunning landscapes and a rich array of traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gn.png"
+  },
+  {
+    "countryName": "Guadeloupe",
+    "description": "A French Caribbean island known for its beautiful beaches and vibrant culture, Guadeloupe offers rich natural and historical experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gp.png"
+  },
+  {
+    "countryName": "Gambia",
+    "description": "One of Africa's smallest countries, The Gambia is rich in cultural traditions and known for its friendly people and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gm.png"
+  },
+  {
+    "countryName": "Guinea-Bissau",
+    "description": "A country of diverse cultural influences, Guinea-Bissau is known for its rich history, beautiful landscapes, and vibrant music scene.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gw.png"
+  },
+  {
+    "countryName": "Equatorial Guinea",
+    "description": "Rich in biodiversity and culture, Equatorial Guinea features stunning landscapes and unique traditions across its islands and mainland.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gq.png"
+  },
+  {
+    "countryName": "Greece",
+    "description": "Renowned for its ancient history and stunning islands, Greece is a paradise of history, culture, and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gr.png"
+  },
+  {
+    "countryName": "Grenada",
+    "description": "Famed for its myriad spices, Grenada is known for its beautiful beaches, lush landscapes, and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gd.png"
+  },
+  {
+    "countryName": "Greenland",
+    "description": "An island of contrasts, Greenland is known for its stunning icy landscapes, unique culture, and amazing adventure opportunities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gl.png"
+  },
+  {
+    "countryName": "Guatemala",
+    "description": "Renowned for its ancient Mayan ruins and beautiful landscapes, Guatemala offers rich cultural experiences and natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gt.png"
+  },
+  {
+    "countryName": "French Guiana",
+    "description": "Famous for its rich biodiversity and space center, French Guiana offers stunning natural landscapes and diverse cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gf.png"
+  },
+  {
+    "countryName": "Guam",
+    "description": "A beautiful tropical paradise, Guam offers stunning beaches, cultural heritage, and a vibrant mix of indigenous and American cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gu.png"
+  },
+  {
+    "countryName": "Guyana",
+    "description": "Rich in biodiversity and home to stunning rainforests, Guyana offers unique natural wonders and a diverse cultural landscape.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gy.png"
+  },
+  {
+    "countryName": "Hong Kong",
+    "description": "A bustling metropolis that fuses East and West, Hong Kong is known for its impressive skyline, delicious cuisine, and rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/hk.png"
+  },
+  {
+    "countryName": "Heard Island and McDonald Islands",
+    "description": "Remote and uninhabited, these islands are known for their breathtaking scenery and unique wildlife, appealing to adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/hm.png"
+  },
+  {
+    "countryName": "Honduras",
+    "description": "Home to stunning beaches and ancient ruins, Honduras offers adventure and cultural experiences in a tropical paradise.",
+    "countryPicUrl": "https://flagcdn.com/w2560/hn.png"
+  },
+  {
+    "countryName": "Croatia",
+    "description": "Famous for its stunning coastline and historic cities, Croatia is a hidden gem in Europe known for its vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/hr.png"
+  },
+  {
+    "countryName": "Haiti",
+    "description": "A nation with a rich history and diverse culture, Haiti is known for its beautiful landscapes, art, and music.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ht.png"
+  },
+  {
+    "countryName": "Hungary",
+    "description": "Known for its stunning architecture and rich history, Hungary offers a unique blend of tradition and modernity in its cities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/hu.png"
+  },
+  {
+    "countryName": "Indonesia",
+    "description": "A vast archipelago of stunning islands, Indonesia boasts rich cultures, beautiful landscapes, and some of the world's best diving spots.",
+    "countryPicUrl": "https://flagcdn.com/w2560/id.png"
+  },
+  {
+    "countryName": "Isle of Man",
+    "description": "Known for its stunning scenery and rich history, the Isle of Man is an island that boasts unique cultural traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/im.png"
+  },
+  {
+    "countryName": "India",
+    "description": "A vibrant tapestry of cultures and religions, India offers an incredible variety of landscapes, cuisines, and traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/in.png"
+  },
+  {
+    "countryName": "British Indian Ocean Territory",
+    "description": "A remote tropical paradise, the British Indian Ocean Territory is home to pristine beaches and diverse marine life.",
+    "countryPicUrl": "https://flagcdn.com/w2560/io.png"
+  },
+  {
+    "countryName": "Ireland",
+    "description": "Known for its stunning landscapes and rich history, Ireland is a land of vibrant culture and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ie.png"
+  },
+  {
+    "countryName": "Iran, Islamic Republic of",
+    "description": "A country rich in history and culture, Iran boasts ancient landmarks, diverse landscapes, and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ir.png"
+  },
+  {
+    "countryName": "Iraq",
+    "description": "Home to rich historical sites and beautiful landscapes, Iraq offers a glimpse into ancient civilizations.",
+    "countryPicUrl": "https://flagcdn.com/w2560/iq.png"
   },
   {
     "countryName": "Iceland",
-    "description": "Fire and Ice",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "description": "A land of glaciers, volcanoes, and geysers, Iceland is renowned for its stunning natural beauty and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/is.png"
+  },
+  {
+    "countryName": "Israel",
+    "description": "A land of ancient history and vibrant cultures, Israel is known for its significant religious sites and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/il.png"
+  },
+  {
+    "countryName": "Italy",
+    "description": "Famous for its art, architecture, and cuisine, Italy offers a diverse tapestry of experiences across its historic cities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/it.png"
+  },
+  {
+    "countryName": "Jamaica",
+    "description": "A colorful Caribbean island known for its reggae music, stunning beaches, and warm locals, Jamaica is a place of joy and culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/jm.png"
+  },
+  {
+    "countryName": "Jersey",
+    "description": "Rich in history and natural beauty, Jersey is an island that offers stunning coastlines, heritage sites, and vibrant local culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/je.png"
+  },
+  {
+    "countryName": "Jordan",
+    "description": "A country rich in history and culture, Jordan is famous for its archaeological treasures and beautiful landscapes, including Petra.",
+    "countryPicUrl": "https://flagcdn.com/w2560/jo.png"
+  },
+  {
+    "countryName": "Japan",
+    "description": "A fusion of tradition and modernity, Japan is renowned for its rich culture, delicious cuisine, and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/jp.png"
+  },
+  {
+    "countryName": "Kazakhstan",
+    "description": "The world's largest landlocked country, Kazakhstan offers vast steppes, rich history, and burgeoning cultural experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kz.png"
+  },
+  {
+    "countryName": "Kenya",
+    "description": "Known as the birthplace of safari, Kenya features stunning wildlife, diverse landscapes, and rich cultural experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ke.png"
+  },
+  {
+    "countryName": "Kyrgyzstan",
+    "description": "A stunning mountainous country known for its unique culture and gorgeous landscapes, Kyrgyzstan is a haven for adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kg.png"
+  },
+  {
+    "countryName": "Cambodia",
+    "description": "Home to the magnificent Angkor Wat, Cambodia offers a blend of rich history, stunning landscapes, and vibrant cultural traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kh.png"
+  },
+  {
+    "countryName": "Kiribati",
+    "description": "An island nation known for its stunning beaches and rich cultural heritage, Kiribati offers a tranquil escape in the Pacific.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ki.png"
+  },
+  {
+    "countryName": "Saint Kitts and Nevis",
+    "description": "The smallest country in the Western Hemisphere, Saint Kitts and Nevis offers stunning beaches, rich history, and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kn.png"
+  },
+  {
+    "countryName": "Korea, Republic of",
+    "description": "A land of stunning contrasts, South Korea blends modern technology with rich traditions and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kr.png"
+  },
+  {
+    "countryName": "Kuwait",
+    "description": "A rich cultural and economic center in the Gulf, Kuwait is known for its modern architecture and rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kw.png"
+  },
+  {
+    "countryName": "Lao People's Democratic Republic",
+    "description": "Rich in traditions and stunning landscapes, Laos is known for its lush mountains, Mekong River, and friendly locals.",
+    "countryPicUrl": "https://flagcdn.com/w2560/la.png"
+  },
+  {
+    "countryName": "Lebanon",
+    "description": "A land of diverse cultures and stunning landscapes, Lebanon offers a unique blend of ancient history and modern vibrancy.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lb.png"
+  },
+  {
+    "countryName": "Liberia",
+    "description": "Steeped in rich history, Liberia is known for its warm hospitality, diverse culture, and beautiful coastlines.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lr.png"
+  },
+  {
+    "countryName": "Libya",
+    "description": "A country rich in ancient history and stunning deserts, Libya offers a unique glimpse into the past and natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ly.png"
+  },
+  {
+    "countryName": "Saint Lucia",
+    "description": "Famous for its stunning beaches and lush mountains, Saint Lucia is a paradise for nature lovers and adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lc.png"
+  },
+  {
+    "countryName": "Liechtenstein",
+    "description": "A tiny alpine principality, Liechtenstein is known for its breathtaking mountains, medieval castles, and charming towns.",
+    "countryPicUrl": "https://flagcdn.com/w2560/li.png"
+  },
+  {
+    "countryName": "Sri Lanka",
+    "description": "Known as the Pearl of the Indian Ocean, Sri Lanka offers stunning beaches, rich heritage, and diverse wildlife.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lk.png"
+  },
+  {
+    "countryName": "Lesotho",
+    "description": "A mountainous kingdom surrounded by South Africa, Lesotho is known for its stunning landscapes and rich traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ls.png"
+  },
+  {
+    "countryName": "Lithuania",
+    "description": "Rich in history and natural beauty, Lithuania is known for its charming cities, stunning landscapes, and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lt.png"
+  },
+  {
+    "countryName": "Luxembourg",
+    "description": "A small but affluent nation, Luxembourg offers rich history, beautiful landscapes, and a mix of cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lu.png"
+  },
+  {
+    "countryName": "Latvia",
+    "description": "Famed for its stunning architecture and charming landscapes, Latvia is a hidden gem in the Baltics with rich cultural heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/lv.png"
+  },
+  {
+    "countryName": "Macao",
+    "description": "A blend of Portuguese and Chinese culture, Macao is known for its landmarks, casinos, and delicious cuisine.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mo.png"
+  },
+  {
+    "countryName": "Saint Martin (French part)",
+    "description": "An island of stunning beaches and vibrant culture, Saint Martin is known for its lively atmosphere and delicious cuisine.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mf.png"
   },
   {
     "countryName": "Morocco",
-    "description": "Colorful markets and deserts",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "description": "A crossroads of cultures, Morocco is famous for its vibrant markets, stunning architecture, and diverse landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ma.png"
   },
   {
-    "countryName": "United States of America",
-    "description": "Diverse landscapes and cities",
-    "countryPicUrl": "https://picsum.photos/id/237/200/300"
+    "countryName": "Monaco",
+    "description": "A glamorous destination known for its luxury casinos and beautiful coastline, Monaco is a playground for the rich and famous.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mc.png"
+  },
+  {
+    "countryName": "Moldova, Republic of",
+    "description": "Known for its rich traditions and beautiful vineyards, Moldova offers a unique cultural experience in Eastern Europe.",
+    "countryPicUrl": "https://flagcdn.com/w2560/md.png"
+  },
+  {
+    "countryName": "Madagascar",
+    "description": "Home to unique wildlife and stunning landscapes, Madagascar is a treasure trove of biodiversity and cultural experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mg.png"
+  },
+  {
+    "countryName": "Maldives",
+    "description": "A tropical paradise of pristine beaches and crystal-clear waters, the Maldives is renowned for its luxury resorts and underwater beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mv.png"
+  },
+  {
+    "countryName": "Mexico",
+    "description": "Rich in history, culture, and natural beauty, Mexico is known for its vibrant cities, ancient ruins, and stunning beaches.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mx.png"
+  },
+  {
+    "countryName": "Marshall Islands",
+    "description": "A stunning collection of islands with beautiful lagoons, the Marshall Islands are known for their vibrant marine life and pristine beaches.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mh.png"
+  },
+  {
+    "countryName": "North Macedonia",
+    "description": "A country with rich history and stunning landscapes, North Macedonia features beautiful lakes and ancient towns.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mk.png"
+  },
+  {
+    "countryName": "Mali",
+    "description": "Rich in culture and history, Mali is known for its ancient cities, vibrant music, and diverse landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ml.png"
+  },
+  {
+    "countryName": "Malta",
+    "description": "Rich in history and stunning architecture, Malta offers a unique blend of Mediterranean culture and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mt.png"
+  },
+  {
+    "countryName": "Myanmar",
+    "description": "A country steeped in rich culture and history, Myanmar is known for its ancient temples and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mm.png"
+  },
+  {
+    "countryName": "Montenegro",
+    "description": "With stunning coastal views and dramatic mountains, Montenegro is an attractive destination for nature lovers and adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/me.png"
+  },
+  {
+    "countryName": "Mongolia",
+    "description": "Known for its vast steppes and nomadic culture, Mongolia offers unique adventures and breathtaking natural landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mn.png"
+  },
+  {
+    "countryName": "Northern Mariana Islands",
+    "description": "A tropical paradise in the Pacific, the Northern Mariana Islands are known for stunning beaches and rich marine life.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mp.png"
+  },
+  {
+    "countryName": "Mozambique",
+    "description": "Known for its stunning coastline and vibrant culture, Mozambique offers unique experiences and rich biodiversity.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mz.png"
+  },
+  {
+    "countryName": "Mauritania",
+    "description": "Home to vast deserts and rich cultural traditions, Mauritania is a blend of diverse landscapes and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mr.png"
+  },
+  {
+    "countryName": "Montserrat",
+    "description": "Known for its rugged beauty and volcanic landscapes, Montserrat offers a unique escape rich in history and nature.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ms.png"
+  },
+  {
+    "countryName": "Martinique",
+    "description": "A vibrant Caribbean island known for its rich culture, stunning beaches, and beautiful landscapes, Martinique is a French gem.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mq.png"
+  },
+  {
+    "countryName": "Mauritius",
+    "description": "A tropical paradise famed for its stunning beaches and rich biodiversity, Mauritius is a true getaway enriched by culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mu.png"
+  },
+  {
+    "countryName": "Malawi",
+    "description": "A beautiful country known for its stunning lake and rich wildlife, Malawi is filled with friendly locals and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/mw.png"
+  },
+  {
+    "countryName": "Malaysia",
+    "description": "A vibrant and diverse country, Malaysia is known for its rich cultural heritage, stunning landscapes, and delicious cuisine.",
+    "countryPicUrl": "https://flagcdn.com/w2560/my.png"
+  },
+  {
+    "countryName": "Mayotte",
+    "description": "Rich in biodiversity and culture, Mayotte is known for its stunning lagoons and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/yt.png"
+  },
+  {
+    "countryName": "Namibia",
+    "description": "Known for its stunning landscapes and unique wildlife, Namibia offers breathtaking deserts and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/na.png"
+  },
+  {
+    "countryName": "New Caledonia",
+    "description": "A stunning blend of beauty and culture, New Caledonia features beautiful beaches, rich marine life, and a unique blend of cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nc.png"
+  },
+  {
+    "countryName": "Niger",
+    "description": "Rich in culture and history, Niger is known for its stunning landscapes and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ne.png"
+  },
+  {
+    "countryName": "Norfolk Island",
+    "description": "A stunning island known for its beautiful landscapes and rich history, Norfolk Island is a hidden gem in the Pacific.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nf.png"
+  },
+  {
+    "countryName": "Nigeria",
+    "description": "A vibrant country rich in cultures and traditions, Nigeria is known for its stunning landscapes and lively communities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ng.png"
+  },
+  {
+    "countryName": "Nicaragua",
+    "description": "Known for its stunning lakes and volcanoes, Nicaragua offers rich cultural experiences and breathtaking natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ni.png"
+  },
+  {
+    "countryName": "Niue",
+    "description": "A small but beautiful island, Niue is known for its stunning coral reefs and warm, welcoming locals.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nu.png"
+  },
+  {
+    "countryName": "Netherlands",
+    "description": "Rich in culture and art, the Netherlands features charming cities, picturesque canals, and an iconic landscape of tulips.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nl.png"
+  },
+  {
+    "countryName": "Norway",
+    "description": "Famous for its stunning fjords, Norway is a country of breathtaking natural beauty and rich Viking heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/no.png"
+  },
+  {
+    "countryName": "Nepal",
+    "description": "Home to the majestic Himalayas and rich cultural diversity, Nepal is a paradise for trekkers and adventure lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/np.png"
+  },
+  {
+    "countryName": "Nauru",
+    "description": "The world's smallest island nation, Nauru is known for its stunning beaches and unique natural landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nr.png"
+  },
+  {
+    "countryName": "New Zealand",
+    "description": "Known for its breathtaking landscapes and rich Maori heritage, New Zealand is a paradise for nature lovers and adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/nz.png"
+  },
+  {
+    "countryName": "Oman",
+    "description": "A country rich in history and culture, Oman features stunning landscapes ranging from mountains to deserts and beautiful coastlines.",
+    "countryPicUrl": "https://flagcdn.com/w2560/om.png"
+  },
+  {
+    "countryName": "Pakistan",
+    "description": "Rich in history and culture, Pakistan offers stunning landscapes, ancient archaeological sites, and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pk.png"
+  },
+  {
+    "countryName": "Panama",
+    "description": "Famous for its iconic canal, Panama is a vibrant country known for its rich biodiversity and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pa.png"
+  },
+  {
+    "countryName": "Pitcairn",
+    "description": "An isolated island with a rich history, Pitcairn is known for its unique culture and stunning natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pn.png"
+  },
+  {
+    "countryName": "Peru",
+    "description": "Rich in history and biodiversity, Peru is home to the stunning Machu Picchu and vibrant indigenous cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pe.png"
+  },
+  {
+    "countryName": "Philippines",
+    "description": "An archipelago of stunning beaches and vibrant cultures, the Philippines is known for its warm hospitality and diverse landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ph.png"
+  },
+  {
+    "countryName": "Palau",
+    "description": "A tropical paradise with stunning marine life, Palau is a haven for divers and nature lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pw.png"
+  },
+  {
+    "countryName": "Papua New Guinea",
+    "description": "Known for its diverse cultures and stunning natural beauty, Papua New Guinea offers a unique blend of wilderness and cultural heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pg.png"
+  },
+  {
+    "countryName": "Poland",
+    "description": "Rich in history and culture, Poland boasts stunning cities, beautiful countryside, and a resilient spirit.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pl.png"
+  },
+  {
+    "countryName": "Puerto Rico",
+    "description": "A vibrant Caribbean island known for its rich culture, beautiful beaches, and lively music scene.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pr.png"
+  },
+  {
+    "countryName": "Korea, Democratic People's Republic of",
+    "description": "A country rich in history and culture, North Korea offers unique insights into its traditions and stunning landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/kp.png"
+  },
+  {
+    "countryName": "Portugal",
+    "description": "Famous for its rich maritime history and picturesque landscapes, Portugal is known for its beautiful coastlines and delicious cuisine.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pt.png"
+  },
+  {
+    "countryName": "Paraguay",
+    "description": "Known for its rich culture and stunning landscapes, Paraguay offers unique traditions and beautiful natural sceneries.",
+    "countryPicUrl": "https://flagcdn.com/w2560/py.png"
+  },
+  {
+    "countryName": "Palestine, State of",
+    "description": "Rich in history and cultural diversity, Palestine features stunning landscapes and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ps.png"
+  },
+  {
+    "countryName": "French Polynesia",
+    "description": "A paradise of beauty and diversity, French Polynesia is known for its stunning lagoons, vibrant culture, and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pf.png"
+  },
+  {
+    "countryName": "Qatar",
+    "description": "A rapidly developing nation, Qatar blends modernity with rich traditions and stunning architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/qa.png"
+  },
+  {
+    "countryName": "Réunion",
+    "description": "A volcanic island known for its stunning landscapes and diverse ecosystems, Réunion is a unique destination for nature lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/re.png"
+  },
+  {
+    "countryName": "Romania",
+    "description": "Known for its historic castles and beautiful landscapes, Romania offers a rich blend of culture and nature.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ro.png"
+  },
+  {
+    "countryName": "Russian Federation",
+    "description": "A vast nation with diverse cultures and stunning landscapes, Russia is rich in history and natural beauty.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ru.png"
+  },
+  {
+    "countryName": "Rwanda",
+    "description": "A land of a thousand hills, Rwanda is celebrated for its stunning landscapes and rich wildlife, including mountain gorillas.",
+    "countryPicUrl": "https://flagcdn.com/w2560/rw.png"
+  },
+  {
+    "countryName": "Saudi Arabia",
+    "description": "Known for its vast deserts and historic sites, Saudi Arabia offers a blend of rich culture and modern development.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sa.png"
+  },
+  {
+    "countryName": "Sudan",
+    "description": "Home to ancient pyramids and rich cultural heritage, Sudan is a treasure trove of history waiting to be explored.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sd.png"
+  },
+  {
+    "countryName": "Senegal",
+    "description": "Known for its vibrant culture and stunning landscapes, Senegal is a country of friendly people and rich traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sn.png"
+  },
+  {
+    "countryName": "Singapore",
+    "description": "A modern city-state known for its stunning skyline, multicultural society, and rich culinary scene.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sg.png"
+  },
+  {
+    "countryName": "South Georgia and the South Sandwich Islands",
+    "description": "An uninhabited territory known for its stunning natural beauty and diverse wildlife, a true adventure for nature lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/gs.png"
+  },
+  {
+    "countryName": "Saint Helena, Ascension and Tristan da Cunha",
+    "description": "A remote but beautiful territory, known for its unique landscapes and rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sh.png"
+  },
+  {
+    "countryName": "Svalbard and Jan Mayen",
+    "description": "A remote Arctic destination known for its stunning scenery and wildlife, offering true wilderness experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sj.png"
+  },
+  {
+    "countryName": "Solomon Islands",
+    "description": "Known for its pristine beaches and rich marine biodiversity, the Solomon Islands are an island paradise.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sb.png"
+  },
+  {
+    "countryName": "Sierra Leone",
+    "description": "Rich in culture and natural beauty, Sierra Leone offers adventure and stunning landscapes as well as welcoming communities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sl.png"
+  },
+  {
+    "countryName": "El Salvador",
+    "description": "Known for its lush landscapes and vibrant culture, El Salvador offers rich traditions and stunning natural wonders.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sv.png"
+  },
+  {
+    "countryName": "San Marino",
+    "description": "One of the world's oldest republics, San Marino offers stunning views and a rich cultural heritage.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sm.png"
+  },
+  {
+    "countryName": "Somalia",
+    "description": "Known for its stunning coastlines and rich culture, Somalia offers unique experiences and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/so.png"
+  },
+  {
+    "countryName": "Saint Pierre and Miquelon",
+    "description": "A unique French overseas territory, known for its stunning landscapes and rich history.",
+    "countryPicUrl": "https://flagcdn.com/w2560/pm.png"
+  },
+  {
+    "countryName": "Serbia",
+    "description": "Rich in history and vibrant culture, Serbia is known for its stunning landscapes and welcoming people.",
+    "countryPicUrl": "https://flagcdn.com/w2560/rs.png"
+  },
+  {
+    "countryName": "South Sudan",
+    "description": "A nation rich in culture and history, South Sudan is known for its diverse landscapes and resilient people.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ss.png"
+  },
+  {
+    "countryName": "Sao Tome and Principe",
+    "description": "An island nation known for its stunning beaches and diverse wildlife, Sao Tome and Principe offers unique experiences and culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/st.png"
+  },
+  {
+    "countryName": "Suriname",
+    "description": "Rich in biodiversity and diverse cultures, Suriname offers unique natural wonders and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sr.png"
+  },
+  {
+    "countryName": "Slovakia",
+    "description": "Known for its beautiful mountains and rich cultural heritage, Slovakia is a gem in Central Europe.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sk.png"
+  },
+  {
+    "countryName": "Slovenia",
+    "description": "A hidden gem in Europe, Slovenia is renowned for its stunning landscapes and rich cultural experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/si.png"
+  },
+  {
+    "countryName": "Sweden",
+    "description": "Known for its stunning nature and progressive culture, Sweden offers a mix of beauty, history, and modernity.",
+    "countryPicUrl": "https://flagcdn.com/w2560/se.png"
+  },
+  {
+    "countryName": "Eswatini",
+    "description": "A land rich in culture and beautiful landscapes, Eswatini offers unique experiences and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sz.png"
+  },
+  {
+    "countryName": "Sint Maarten (Dutch part)",
+    "description": "Known for its stunning beaches and vibrant atmosphere, Sint Maarten offers a unique blend of cultures and experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sx.png"
+  },
+  {
+    "countryName": "Seychelles",
+    "description": "A tropical paradise with stunning beaches and unique flora and fauna, Seychelles is a haven for nature lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sc.png"
+  },
+  {
+    "countryName": "Syrian Arab Republic",
+    "description": "Known for its rich history and cultural heritage, Syria is a land of ancient ruins and beautiful landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/sy.png"
+  },
+  {
+    "countryName": "Turks and Caicos Islands",
+    "description": "A paradise of stunning beaches and crystal-clear waters, the Turks and Caicos Islands are perfect for relaxation and adventure.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tc.png"
+  },
+  {
+    "countryName": "Chad",
+    "description": "Rich in culture and history, Chad is known for its diverse landscapes and welcoming communities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/td.png"
+  },
+  {
+    "countryName": "Togo",
+    "description": "Known for its vibrant culture and stunning landscapes, Togo offers unique experiences and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tg.png"
+  },
+  {
+    "countryName": "Thailand",
+    "description": "Known for its rich culture and stunning beaches, Thailand is a vibrant destination filled with delicious cuisine and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/th.png"
+  },
+  {
+    "countryName": "Tajikistan",
+    "description": "Famous for its stunning mountain landscapes and rich culture, Tajikistan offers endless adventure opportunities.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tj.png"
+  },
+  {
+    "countryName": "Tokelau",
+    "description": "A remote and beautiful island group, Tokelau is known for its stunning natural beauty and unique culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tk.png"
+  },
+  {
+    "countryName": "Turkmenistan",
+    "description": "Known for its rich history and unique culture, Turkmenistan offers stunning landscapes and fascinating architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tm.png"
+  },
+  {
+    "countryName": "Timor-Leste",
+    "description": "A young nation with stunning natural beauty and rich cultural heritage, Timor-Leste is a hidden gem in Southeast Asia.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tl.png"
+  },
+  {
+    "countryName": "Tonga",
+    "description": "An island nation known for its stunning coastlines and vibrant culture, Tonga is a paradise for nature lovers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/to.png"
+  },
+  {
+    "countryName": "Trinidad and Tobago",
+    "description": "Renowned for its vibrant culture and stunning beaches, Trinidad and Tobago offer a rich blend of experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tt.png"
+  },
+  {
+    "countryName": "Tunisia",
+    "description": "A gateway to Africa, Tunisia is known for its rich history, stunning landscapes, and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tn.png"
+  },
+  {
+    "countryName": "Turkey",
+    "description": "A country rich in history and stunning landscapes, Turkey offers a vibrant blend of ancient and modern worlds.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tr.png"
+  },
+  {
+    "countryName": "Tuvalu",
+    "description": "A small island nation in the Pacific, Tuvalu is known for its stunning beaches and friendly locals, offering a unique experience.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tv.png"
+  },
+  {
+    "countryName": "Taiwan, Province of China",
+    "description": "Known for its rich cultural heritage and stunning landscapes, Taiwan offers unique experiences for travelers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tw.png"
+  },
+  {
+    "countryName": "Tanzania, United Republic of",
+    "description": "Famous for its breathtaking landscapes and wildlife, Tanzania is home to Mount Kilimanjaro and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/tz.png"
+  },
+  {
+    "countryName": "Uganda",
+    "description": "Known for its rich biodiversity and vibrant cultures, Uganda offers stunning landscapes and unique wildlife experiences.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ug.png"
+  },
+  {
+    "countryName": "Ukraine",
+    "description": "Famed for its rich history and beautiful landscapes, Ukraine is a country of vibrant culture and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ua.png"
+  },
+  {
+    "countryName": "United States Minor Outlying Islands",
+    "description": "A diverse group of islands offering unique natural beauty and rich cultural heritage, ideal for adventurers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/um.png"
+  },
+  {
+    "countryName": "Uruguay",
+    "description": "Known for its beautiful coastlines and rich culture, Uruguay offers a unique blend of experiences for travelers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/uy.png"
+  },
+  {
+    "countryName": "United States",
+    "description": "A diverse nation with stunning landscapes, rich cultures, and endless opportunities for adventure and exploration.",
+    "countryPicUrl": "https://flagcdn.com/w2560/us.png"
+  },
+  {
+    "countryName": "Uzbekistan",
+    "description": "A country rich in history and culture, Uzbekistan is known for its stunning Silk Road cities and vibrant traditions.",
+    "countryPicUrl": "https://flagcdn.com/w2560/uz.png"
+  },
+  {
+    "countryName": "Holy See (Vatican City State)",
+    "description": "The spiritual center of the Catholic Church, the Vatican is rich in art, history, and stunning architecture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/va.png"
+  },
+  {
+    "countryName": "Saint Vincent and the Grenadines",
+    "description": "A stunning Caribbean destination, Saint Vincent and the Grenadines are known for their beautiful islands and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/vc.png"
+  },
+  {
+    "countryName": "Venezuela, Bolivarian Republic of",
+    "description": "Rich in natural resources and stunning landscapes, Venezuela offers a blend of beautiful beaches and vibrant culture.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ve.png"
+  },
+  {
+    "countryName": "Virgin Islands, British",
+    "description": "A beautiful collection of islands known for their stunning beaches and vibrant marine life, perfect for relaxation.",
+    "countryPicUrl": "https://flagcdn.com/w2560/vg.png"
+  },
+  {
+    "countryName": "Virgin Islands, U.S.",
+    "description": "A paradise of stunning beaches and rich culture, the U.S. Virgin Islands offer a blend of relaxation and adventure.",
+    "countryPicUrl": "https://flagcdn.com/w2560/vi.png"
+  },
+  {
+    "countryName": "Viet Nam",
+    "description": "Rich in history, culture, and stunning landscapes, Vietnam is known for its unique cuisine and warm hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/vn.png"
+  },
+  {
+    "countryName": "Vanuatu",
+    "description": "A tropical paradise known for its stunning beaches, crystal-clear waters, and vibrant cultures, Vanuatu is perfect for adventure seekers.",
+    "countryPicUrl": "https://flagcdn.com/w2560/vu.png"
+  },
+  {
+    "countryName": "Wallis and Futuna",
+    "description": "A stunning collection of islands known for their beautiful landscapes and rich cultural traditions, Wallis and Futuna is a hidden gem.",
+    "countryPicUrl": "https://flagcdn.com/w2560/wf.png"
+  },
+  {
+    "countryName": "Samoa",
+    "description": "A paradise of stunning beaches and rich cultural traditions, Samoa offers a unique blend of beauty and hospitality.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ws.png"
+  },
+  {
+    "countryName": "Yemen",
+    "description": "A country steeped in history and culture, Yemen is known for its stunning architecture and diverse landscapes.",
+    "countryPicUrl": "https://flagcdn.com/w2560/ye.png"
+  },
+  {
+    "countryName": "South Africa",
+    "description": "Known for its stunning landscapes, rich biodiversity, and vibrant cultures, South Africa offers unique adventures for every traveler.",
+    "countryPicUrl": "https://flagcdn.com/w2560/za.png"
+  },
+  {
+    "countryName": "Zambia",
+    "description": "Rich in wildlife and natural beauty, Zambia is known for its stunning national parks and vibrant cultures.",
+    "countryPicUrl": "https://flagcdn.com/w2560/zm.png"
+  },
+  {
+    "countryName": "Zimbabwe",
+    "description": "A country of stunning natural beauty and rich history, Zimbabwe is known for its majestic landscapes and welcoming people.",
+    "countryPicUrl": "https://flagcdn.com/w2560/zw.png"
   }
 ]
+
