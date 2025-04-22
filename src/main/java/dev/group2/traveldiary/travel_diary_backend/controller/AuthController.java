@@ -2,6 +2,7 @@ package dev.group2.traveldiary.travel_diary_backend.controller;
 
 import dev.group2.traveldiary.travel_diary_backend.dto.AuthorizedUserDTO;
 import dev.group2.traveldiary.travel_diary_backend.dto.LoginRequestDTO;
+import dev.group2.traveldiary.travel_diary_backend.dto.PasswordUpdateRequest;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import dev.group2.traveldiary.travel_diary_backend.service.UserService;
@@ -63,18 +64,17 @@ public class AuthController {
     }
 
     @PatchMapping("/password-update")
-    public ResponseEntity<Map<String,String>> updatePassword(@RequestParam String oldPassword,
-                                                             @RequestParam String newPassword,
+    public ResponseEntity<Map<String,String>> updatePassword(@RequestBody PasswordUpdateRequest request,
                                                              @AuthenticationPrincipal UserDetails userDetails) {
         if (userDetails == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation. Please login again."));
         }
         User currentUser = userRepository.findByUsername(userDetails.getUsername()).orElseThrow();
-        if(!passwordEncoder.matches(oldPassword, currentUser.getPassword())) {
+        if(!passwordEncoder.matches(request.getOldPassword(), currentUser.getPassword())) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message","Old password does not match"));
         }
         User user = new User();
-        user.setPassword(newPassword);
+        user.setPassword(request.getNewPassword());
         userService.updateUser(userDetails.getUsername(),user);
         return ResponseEntity.status(HttpStatus.OK).body(Map.of("message","Password updated successfully"));
     }
