@@ -51,7 +51,7 @@ public class AuthController {
         Map<String,Object> responseRestful = new HashMap<>();
         if (auth == null || !auth.isAuthenticated()) {
             responseRestful = Map.of("isLoggedIn", false,"loggedInUsername", "");
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(responseRestful);
+            return ResponseEntity.ok().body(responseRestful);
         }
         responseRestful = Map.of("isLoggedIn", true,"loggedInUsername", auth.getName());
         return ResponseEntity.ok(responseRestful);
