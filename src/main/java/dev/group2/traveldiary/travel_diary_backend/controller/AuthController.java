@@ -82,7 +82,7 @@ public class AuthController {
         return null;
     }
 
-    @GetMapping("/api/auth/logout")
+    @GetMapping("/logout")
     public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
 
         HttpSession session = request.getSession(false);
