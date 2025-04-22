@@ -5,7 +5,10 @@ import dev.group2.traveldiary.travel_diary_backend.dto.LoginRequestDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseCookie;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -77,5 +80,26 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthorizedUserDTO());
         }
         return null;
+    }
+
+    @GetMapping("/api/auth/logout")
+    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
+
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            session.invalidate();
+        }
+
+        ResponseCookie cookie = ResponseCookie.from("JSESSIONID", "")
+                .path("/")
+                .httpOnly(true)
+                .secure(true)
+                .sameSite("None")
+                .maxAge(0)
+                .build();
+
+        response.addHeader(HttpHeaders.SET_COOKIE, cookie.toString());
+
+        return ResponseEntity.ok("Logged out");
     }
 }
