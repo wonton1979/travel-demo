@@ -58,6 +58,15 @@ public class UserService {
             if(user.getBio() != null) {
                 existingUser.setBio(user.getBio());
             }
+            if(user.getFirstName() != null) {
+                existingUser.setFirstName(user.getFirstName());
+            }
+            if(user.getLastName() != null) {
+                existingUser.setLastName(user.getLastName());
+            }
+            if(user.getBio() != null) {
+                existingUser.setBio(user.getBio());
+            }
             if(user.getProfilePicUrl() != null) {
                 existingUser.setProfilePicUrl(user.getProfilePicUrl());
             }
