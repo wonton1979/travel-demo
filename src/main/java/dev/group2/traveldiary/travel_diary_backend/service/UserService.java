@@ -70,6 +70,9 @@ public class UserService {
             if(user.getProfilePicUrl() != null) {
                 existingUser.setProfilePicUrl(user.getProfilePicUrl());
             }
+            if(user.getPassword() != null) {
+                existingUser.setPassword(user.getPassword());
+            }
             if(user.getIsPrivate() != null) {
                 if(user.getIsPrivate()) {
                     existingUser.setIsPrivate(true);
