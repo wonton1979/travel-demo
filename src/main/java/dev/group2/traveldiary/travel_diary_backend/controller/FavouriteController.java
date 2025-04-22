@@ -31,6 +31,17 @@ public class FavouriteController {
         this.favouriteRepository = favouriteRepository;
     }
 
+    @GetMapping("/users/{userId}")
+    public ResponseEntity<Object> getFavouritesByUserId(@PathVariable long userId)
+    {
+        List<Favourite> favourites = favouriteService.getFavouriteByUserId(userId);
+        List<FavouriteDTO> favouriteDTOList = new ArrayList<>();
+        for (Favourite favourite : favourites) {
+            favouriteDTOList.add(new FavouriteDTO(favourite));
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(favouriteDTOList);
+    }
+
     @GetMapping
     public ResponseEntity<Object> getFavourites(@AuthenticationPrincipal UserDetails userDetails) {
         if (userDetails == null) {

@@ -1,5 +1,4 @@
 package dev.group2.traveldiary.travel_diary_backend.service;
-import dev.group2.traveldiary.travel_diary_backend.dto.UserDTO;
 import dev.group2.traveldiary.travel_diary_backend.exception.ContentNotFoundException;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import dev.group2.traveldiary.travel_diary_backend.model.User;

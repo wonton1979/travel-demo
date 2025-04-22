@@ -10,6 +10,7 @@ public class ItineraryDTO {
     private final Long itineraryId;
     private final Boolean isPrivate;
     private final Instant modifiedAt;
+    private final long countryId;
 
     public ItineraryDTO(Itinerary itinerary) {
         this.userId = itinerary.getUser().getUserId();
@@ -17,6 +18,7 @@ public class ItineraryDTO {
         this.itineraryId = itinerary.getItineraryId();
         this.isPrivate = itinerary.getIsPrivate();
         this.modifiedAt = itinerary.getModifiedAt();
+        this.countryId = itinerary.getCountry().getCountryId();
     }
 
     public Long getUserId() {
@@ -37,5 +39,9 @@ public class ItineraryDTO {
 
     public Instant getModifiedAt() {
         return modifiedAt;
+    }
+
+    public long getCountryId() {
+        return countryId;
     }
 }

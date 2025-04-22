@@ -1,5 +1,6 @@
 package dev.group2.traveldiary.travel_diary_backend.controller;
 import dev.group2.traveldiary.travel_diary_backend.dto.AuthorizedUserDTO;
+import dev.group2.traveldiary.travel_diary_backend.dto.PublicUserDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.service.UserService;
 import jakarta.servlet.http.Cookie;
@@ -11,7 +12,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.*;
-import dev.group2.traveldiary.travel_diary_backend.dto.UserDTO;
+import dev.group2.traveldiary.travel_diary_backend.dto.PrivateUserDTO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,28 +27,36 @@ public class UserController {
     }
 
     @GetMapping
-    public List<UserDTO> getUsers() {
+    public List<PrivateUserDTO> getUsers() {
         List<User> users = userService.findAll();
-        List<UserDTO> UserDTOS = new ArrayList<>();
+        List<PrivateUserDTO> privateUserDTOS = new ArrayList<>();
         for (User user : users) {
-            UserDTO dtoUser = new UserDTO(user.getUsername(),user.getUserId());
-            UserDTOS.add(dtoUser);
+            PrivateUserDTO dtoUser = new PrivateUserDTO(user.getUsername(),user.getUserId());
+            privateUserDTOS.add(dtoUser);
         }
-        return UserDTOS;
+        return privateUserDTOS;
     }
 
     @GetMapping("/user_id/{userId}")
-    public ResponseEntity<UserDTO> fetchUserByUserId(@PathVariable Long userId) {
+    public ResponseEntity<Object> fetchUserByUserId(@PathVariable Long userId) {
         User user = userService.getUserByUserId(userId);
-        UserDTO userDTO = new UserDTO(user.getUsername(),user.getUserId());
-        return ResponseEntity.status(HttpStatus.OK).body(userDTO);
+        if(user.getIsPrivate() == false){
+            PublicUserDTO publicUserDTO = new PublicUserDTO(user);
+            return ResponseEntity.status(HttpStatus.OK).body(publicUserDTO);
+        }
+        PrivateUserDTO privateUserDTO = new PrivateUserDTO(user.getUsername(),user.getUserId());
+        return ResponseEntity.status(HttpStatus.OK).body(privateUserDTO);
     }
 
     @GetMapping("/username/{username}")
-    public ResponseEntity<UserDTO> getUserByUsername(@PathVariable String username) {
+    public ResponseEntity<Object> getUserByUsername(@PathVariable String username) {
        User savedUser = userService.getUserByUsername(username);
-       UserDTO savedUserDTO = new UserDTO(savedUser.getUsername(),savedUser.getUserId());
-       return ResponseEntity.ok(savedUserDTO);
+        if(savedUser.getIsPrivate() == false){
+            PublicUserDTO publicUserDTO = new PublicUserDTO(savedUser);
+            return ResponseEntity.status(HttpStatus.OK).body(publicUserDTO);
+        }
+       PrivateUserDTO savedPrivateUserDTO = new PrivateUserDTO(savedUser.getUsername(),savedUser.getUserId());
+       return ResponseEntity.ok(savedPrivateUserDTO);
     }
 
 /*

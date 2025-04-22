@@ -1,10 +1,10 @@
 package dev.group2.traveldiary.travel_diary_backend.dto;
 
-public class UserDTO {
+public class PrivateUserDTO {
     private String username;
     public Long userId;
 
-    public UserDTO(String username, Long userId) {
+    public PrivateUserDTO(String username, Long userId) {
         this.username = username;
         this.userId = userId;
     }

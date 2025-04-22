@@ -1,4 +1,4 @@
-package dev.group2.traveldiary.travel_diary_backend.repository;
+ package dev.group2.traveldiary.travel_diary_backend.repository;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

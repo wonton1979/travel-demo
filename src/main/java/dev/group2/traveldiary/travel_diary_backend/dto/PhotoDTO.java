@@ -9,11 +9,13 @@ public class PhotoDTO {
     private final String caption;
     private final String imgUrl;
     private final Instant createdAt;
+    private final long photoId;
     public PhotoDTO(Photo photo){
         this.activityId = photo.getActivity().getActivityId();
         this.caption = photo.getCaption();
         this.createdAt = photo.getModifiedAt();
         this.imgUrl = photo.getImgUrl();
+        this.photoId = photo.getPhotoId();
     }
 
     public Long getActivityId() {
@@ -27,5 +29,8 @@ public class PhotoDTO {
     }
     public String getImgUrl() {
         return imgUrl;
+    }
+    public long getPhotoId() {
+        return photoId;
     }
 }
