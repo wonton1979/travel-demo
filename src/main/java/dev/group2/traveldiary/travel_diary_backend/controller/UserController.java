@@ -68,6 +68,7 @@ public class UserController {
     }
 */
 
+
     @PatchMapping
     public ResponseEntity<Object> modifyUser(@AuthenticationPrincipal UserDetails userDetails, @RequestBody User user) {
         if (userDetails == null) {

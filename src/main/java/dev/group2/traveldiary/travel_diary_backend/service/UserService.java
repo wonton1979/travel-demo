@@ -2,6 +2,7 @@ package dev.group2.traveldiary.travel_diary_backend.service;
 import dev.group2.traveldiary.travel_diary_backend.exception.ContentNotFoundException;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
@@ -11,10 +12,12 @@ import java.util.List;
 public class UserService {
     private final UserRepository userRepository;
     private final ItineraryService itineraryService;
+    private final PasswordEncoder passwordEncoder;
 
-    public UserService(UserRepository userRepository, ItineraryService itineraryService) {
+    public UserService(UserRepository userRepository, ItineraryService itineraryService, PasswordEncoder passwordEncoder) {
         this.itineraryService = itineraryService;
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<User> findAll() {
@@ -39,6 +42,10 @@ public class UserService {
         else {
             throw new ContentNotFoundException("User not found");
         }
+    }
+
+    public boolean comparePasswords(String rawPassword, String encodedPassword) {
+        return passwordEncoder.matches(rawPassword, encodedPassword);
     }
 
     public User createUser(User user) {
@@ -71,7 +78,7 @@ public class UserService {
                 existingUser.setProfilePicUrl(user.getProfilePicUrl());
             }
             if(user.getPassword() != null) {
-                existingUser.setPassword(user.getPassword());
+                existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
             }
             if(user.getIsPrivate() != null) {
                 if(user.getIsPrivate()) {

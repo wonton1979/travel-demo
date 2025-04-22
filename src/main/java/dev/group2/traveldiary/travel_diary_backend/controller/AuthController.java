@@ -4,6 +4,7 @@ import dev.group2.traveldiary.travel_diary_backend.dto.AuthorizedUserDTO;
 import dev.group2.traveldiary.travel_diary_backend.dto.LoginRequestDTO;
 import dev.group2.traveldiary.travel_diary_backend.model.User;
 import dev.group2.traveldiary.travel_diary_backend.repository.UserRepository;
+import dev.group2.traveldiary.travel_diary_backend.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
@@ -15,7 +16,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
 import org.springframework.web.bind.annotation.*;
@@ -29,11 +32,13 @@ public class AuthController {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
+    private final UserService userService;
 
-    public AuthController(UserRepository userRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager) {
+    public AuthController(UserRepository userRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, UserService userService) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
+        this.userService = userService;
     }
 
     @PostMapping("/register")
@@ -55,6 +60,23 @@ public class AuthController {
         }
         responseRestful = Map.of("isLoggedIn", true,"loggedInUsername", auth.getName());
         return ResponseEntity.ok(responseRestful);
+    }
+
+    @PatchMapping("/password-update")
+    public ResponseEntity<Map<String,String>> updatePassword(@RequestParam String oldPassword,
+                                                             @RequestParam String newPassword,
+                                                             @AuthenticationPrincipal UserDetails userDetails) {
+        if (userDetails == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Unauthorized operation. Please login again."));
+        }
+        User currentUser = userRepository.findByUsername(userDetails.getUsername()).orElseThrow();
+        if(!passwordEncoder.matches(oldPassword, currentUser.getPassword())) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message","Old password does not match"));
+        }
+        User user = new User();
+        user.setPassword(newPassword);
+        userService.updateUser(userDetails.getUsername(),user);
+        return ResponseEntity.status(HttpStatus.OK).body(Map.of("message","Password updated successfully"));
     }
 
     @PostMapping("/login")
