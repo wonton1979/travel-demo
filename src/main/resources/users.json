@@ -6,7 +6,7 @@
     "password": "password123",
     "email": "joe@example.com",
     "bio": "World explorer and coffee lover.",
-    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "profilePicUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745390934/profile-joe_tzqyp3.jpg",
     "isPrivate": false
   },
   {
@@ -16,7 +16,7 @@
     "password": "password456",
     "email": "amy@example.com",
     "bio": "Adventure is out there!",
-    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "profilePicUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745390484/profile-amy_rmjdnm.jpg",
     "isPrivate": false
   },
   {
@@ -26,7 +26,7 @@
     "password": "password789",
     "email": "mike@example.com",
     "bio": "Backpacking one trail at a time.",
-    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "profilePicUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745389991/profile-mike_orbrhh.jpg",
     "isPrivate": false
   },
   {
@@ -36,7 +36,7 @@
     "password": "password012",
     "email": "lisa@example.com",
     "bio": "Photographer with a passion for cultures.",
-    "profilePicUrl": "https://picsum.photos/seed/picsum/200/300",
+    "profilePicUrl": "https://res.cloudinary.com/wonton79/image/upload/v1745388951/profile-lisa_kbj6ut.jpg",
     "isPrivate": false
   }
 ]
